@@ -1,40 +1,8 @@
-vcrvivace = \relative c { 
-	\global
-	\time 3/4
-	\key d \minor
-	\clef bass
+vcrvivace = { \vcvivace }
+clrvivace = { \clvivace }
 
-	g4 r r |
-	a r r |
-	bes b r8 b |
-	c4 c, c'' |
-	\set Score.measureLength = #(ly:make-moment 6 4)
-	fis,2 g ees |
-	\set Score.measureLength = #(ly:make-moment 3 4)
-	d2. |
-}
-
-vcrgrave = \relative c' { 
-	\global
-	\clef bass
-	\time 4/4
-	\set Score.measureLength = #(ly:make-moment 4 2)
-
-	g,2 g'1 fis2 |
-  g2 bes ees,1 |
-  d ees2 e |
-  d1 g,2 g'~ |
-  g f4 g a2. g4 |
-  fis d g2 c,1 |
-
-  d ees |
-  f~ f2 fis |
-  g1 c, |
-  b2 c'1 bes2 |
-  aes2. aes4 d,1 |
-  cis d |
-	g,\breve | \bar "|."
-}
+vcrgrave = { \vcgrave }
+clrgrave = { \clgrave }
 
 vcrallegro = \relative c { 
 	\global

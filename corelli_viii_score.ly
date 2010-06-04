@@ -79,11 +79,11 @@
 				} >>
 				\new Staff << {
 					\set Staff.instrumentName = \markup \right-column {
-            "Violoncello"
+            "Violoncello "
               \line { \tiny "del concerto grosso " }
           }
-		        \vcrvivace \bar "||"
-        		\vcrgrave 
+						<< \vcrvivace \clrvivace >> \bar "||"
+						<< \vcrgrave \clrgrave >>
 				} >>
       >>
 		
