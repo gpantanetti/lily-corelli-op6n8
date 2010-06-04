@@ -50,8 +50,8 @@
             "Violoncello "
               \line { \tiny "del concertino " }
           }
-          \vcvivace \bar "||"
-          \vcgrave 
+          << \vcvivace \clvivace >> \bar "||"
+          << \vcgrave \clgrave >>
 				} >>
       >>
 
@@ -101,7 +101,7 @@
           \vlIIallegro 
 				} >> 
      		\new Staff << {
-          \vcallegro
+          << \vcallegro \clallegro >>
 				} >>
       >>
 
@@ -138,9 +138,9 @@
           \vlIIadagioII
 				} >> 
      		\new Staff << {
-          \time 4/4 \vcadagio \bar "||"
-          \vcallegroII \bar "||"
-          \vcadagioII
+					\time 4/4 << \vcadagio \cladagio >> \bar "||"
+					<< \vcallegroII \clallegroII >> \bar "||"
+					<< \vcadagioII \cladagioII >> 
 				} >>
       >>
 
@@ -181,7 +181,7 @@
           \vlIIvivaceII
 				} >> 
      		\new Staff << {
-          \vcvivaceII
+          << \vcvivaceII \clvivaceII >>
 				} >>
       >>
 
@@ -217,8 +217,8 @@
           \vlIIpastorale 
 				} >> 
      		\new Staff << {
-          \vcallegroIII 
-          \vcpastorale 
+          << \vcallegroIII \clallegroIII >>
+          << \vcpastorale \clpastorale >>
 				} >>
       >>
 

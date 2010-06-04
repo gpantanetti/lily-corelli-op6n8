@@ -1,3 +1,5 @@
+\include "corelli_viii_vcn.ly"
+
 vcrvivace = { \vcvivace }
 clrvivace = { \clvivace }
 

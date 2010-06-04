@@ -1,5 +1,5 @@
 %#(set-global-staff-size 16.8)
-#(set-global-staff-size 17.6)
+#(set-global-staff-size 17.2)
 %#(set-global-staff-size 17)
 
 \paper  {

@@ -16,19 +16,23 @@
 
 \paper  {
   indent = 1\cm
-    top-margin = .8\cm
-    bottom-margin = .8\cm
-    before-title-space = 6\mm 
-    between-title-space = 4\mm
-    after-title-space = .8\cm
+    % top-margin = .6\cm
+    top-system-spacing = 2\cm
+    % bottom-margin = .6\cm
+    bottom-system-spacing = 2\cm
+    %% before-title-space = 6\mm 
+    %% between-title-space = 4\mm
+    %% after-title-space = .8\cm
     % interscoreline = 2.\mm
-    % between-system-space = 15\mm
-    % between-system-padding = 6\mm
-    ragged-bottom = ##f
-    ragged-last-bottom=##t
-    foot-separation = 6\mm
-    head-separation = 6\mm
-    line-width = 180\mm
+    %% between-system-space = 15\mm
+    %% between-system-padding = 6\mm
+    %ragged-bottom = ##f
+    %ragged-last-bottom = ##t
+    %%foot-separation = 6\mm
+    %%head-separation = 6\mm
+    line-width = 184\mm
+		after-title-spacing = #'((padding . 1\cm))
+		before-title-spacing = #'((padding . 1\cm))
 
     oddFooterMarkup = \markup {
       \fill-line {
@@ -49,7 +53,7 @@
       \override BarLine #'thick-thickness = #2.4 
       %\override BarLine #'gap = #.8 
       \override BarNumber #'font-size = #0.8
-      \override BarNumber #'padding = #2.2
+      \override BarNumber #'padding = #2.0
       \override MultiMeasureRest #'expand-limit = #1
   }
 }
