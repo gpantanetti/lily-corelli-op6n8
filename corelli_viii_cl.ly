@@ -19,7 +19,7 @@
 		\adagio << \vcadagioII \cladagioII >> 
 	} }
 	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\vivace \vcvivaceII
+		\vivace << \vcvivaceII \clvivaceII >>
 	} }
 	\score { { \new Staff \with { \consists "Page_turn_engraver" }
 		\allegro \vcallegroIII 

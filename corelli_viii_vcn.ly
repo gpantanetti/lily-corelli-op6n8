@@ -239,8 +239,15 @@ vcallegroII = \relative c' {
 clallegroII = \figuremode { 
 	\global
 
-	\repeat unfold 11 { <_>1 | }
-	<6>2 <6> |
+	<_>2 <[6]> |
+	<_>1 |
+	<[6]>2 <_> |
+	<[6]>2 <[_-]> |
+	\repeat unfold 4 {<[6]>2 <_> }|
+	<_>1 |
+	<[6]>2 <_> |
+	<_>1 |
+	<6>2 <6 [_-]> |
 	<_>1 |
 }
 
@@ -298,6 +305,33 @@ vcvivaceII = \relative c' {
   d2 ees4 |
   c d d, |
   g2. \bar ":|.|:"
+}
+
+clvivaceII = \figuremode { 
+	\global
+	\time 3/4
+	
+	<_>2. |
+	<_+>2. |
+	\repeat unfold 3 { <_>2. | } 
+	<6>2. |
+	<7>4 <6>2 |
+	<_+>2. |
+	\repeat unfold 4 { <_>2. | } 
+	<_>4 <6>2 |
+	<_+>2 <_>4 |
+	<7 5>4 <4> <3> |
+	\repeat unfold 2 { <_>2. | } 
+	<_->2. |
+	\repeat unfold 2 { <_>2. | } 
+	<6 5>4 <6 5>2 |
+	<9>4 <8>4 <_>4 |
+	<6 5 _->4 <_+>2 |
+	<_>2. |
+	<9>4 <8>4 <_>4 |
+	<7 _+>2 <5>4 |
+	<7 5>4 <4>4 <3>4 |
+	<_>2. |	
 }
 
 vcallegroIII = \relative c' {
