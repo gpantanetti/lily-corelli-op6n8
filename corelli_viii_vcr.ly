@@ -16,7 +16,7 @@
 	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
 		\adagio \time 4/4 \vcradagio \bar "||"
 		\allegro \vcrallegroII \bar "||"
-		\adagio \vcradagioII
+		\adagio \vcradagioII \pageBreak
 	} }
 	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
 		\vivace \vcrvivaceII

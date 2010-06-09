@@ -1,10 +1,7 @@
-%#(set-global-staff-size 16.8)
-#(set-global-staff-size 17.2)
-%#(set-global-staff-size 17)
+#(set-global-staff-size 17.6)
 
 \paper  {
 	auto-first-page-number = ##t
-  # (define page-breaking ly:page-turn-breaking)
 }
 
 \layout {

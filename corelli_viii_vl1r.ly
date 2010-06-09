@@ -5,24 +5,26 @@
 
 \header { instrument = "Violino I" }
 
+#(set-global-staff-size 16.9)
+
 \book {
-	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\compressFullBarRests \vivace \vlIrvivace \bar "||"
-		\break \grave  \vlIrgrave 
+	\score { { \new Staff 
+		\vivace \vlIrvivace \bar "||"
+		\grave  \vlIrgrave 
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\compressFullBarRests \allegro \vlIrallegro
+	\score { { \new Staff 
+		\allegro \vlIrallegro
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\compressFullBarRests \adagio \vlIradagio \bar "||"
+	\score { { \new Staff 
+		\adagio \vlIradagio \bar "||"
 		\allegro \vlIrallegroII \bar "||"
-		\adagio \vlIradagioII
+		\adagio \vlIradagioII \pageBreak
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\compressFullBarRests \vivace \vlIrvivaceII
+	\score { { \new Staff 
+		\vivace \vlIrvivaceII % \pageBreak
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" }
-		\compressFullBarRests \allegro \vlIrallegroIII 
+	\score { { \new Staff 
+		\allegro \vlIrallegroIII 
 		\pastorale \vlIrpastorale 
 	} }
 }

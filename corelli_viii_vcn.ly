@@ -186,7 +186,7 @@ clallegro = \figuremode {
 }
 
 vcadagio = \relative c' { 
-	%\global
+	\global
 	\key d \minor
   \clef tenor
 

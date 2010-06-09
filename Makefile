@@ -7,9 +7,11 @@ all : ${PDF}
 pdf : ${PDF}
 
 %.ps : %.ly
+	./hg_revision.sh
 	lilypond --ps $<		
 	
 %.pdf : %.ly
+	./hg_revision.sh
 	lilypond --pdf $<  
 
 clean : 
@@ -18,5 +20,7 @@ clean :
 delete : clean
 	rm -f ${PS} ${PDF}
 
-save: clean
-	cd ..; tar czvf corelli_viii_${DATE}.tar.gz corelli_VIII/
+save : clean
+	cd ..; tar czvf corelli_viii_${DATE}.tar.gz corelli_viii/
+	
+

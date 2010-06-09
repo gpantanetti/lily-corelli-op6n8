@@ -6,23 +6,23 @@
 \header { instrument = "Alto Viola" }
 
 \book {
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff 
 		\vivace \vlavivace \bar "||"
 		\grave  \vlagrave 
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff 
 		\allegro \vlaallegro
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\adagio \vlaadagio \bar "||"
 		\allegro \vlaallegroII \bar "||"
-		\adagio \vlaadagioII
+		\adagio \vlaadagioII \pageBreak
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\vivace \vlavivaceII
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\allegro \vlaallegroIII 
+	\score { { \new Staff
+		\allegro \vlaallegroIII \break
 		\pastorale \vlapastorale 
 	} }
 }
