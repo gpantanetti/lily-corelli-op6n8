@@ -11,7 +11,7 @@ vcvivace = \relative c {
 	\set Score.measureLength = #(ly:make-moment 6 4)
 	fis,2 g ees |
 	\set Score.measureLength = #(ly:make-moment 3 4)
-	d2. |
+	d2. | \bar "||"
 }
 
 clvivace = \figuremode {
@@ -25,7 +25,7 @@ clvivace = \figuremode {
 	\set Score.measureLength = #(ly:make-moment 6 4)
 	<6 5>2 <_> <6> |
 	\set Score.measureLength = #(ly:make-moment 3 4)
-	<_+>2. |
+	<_+>2. | \bar "||"
 } 
 
 vcgrave = \relative c' { 
@@ -135,8 +135,8 @@ clallegro = \figuremode {
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
 	
-	\repeat unfold 2 {<_>2 <6 5 _->4 <_-> } |
-	\repeat unfold 2 {<_>2 <6 5 _->4 <3>} |
+	\repeat unfold 2 {<_>2 <6 5 _->4 <_+> } |
+	\repeat unfold 2 {<_>2 <6 5>4 <3>} |
   <_>2 <6 5>4 <6 5> |
 
   <9>4 <6> <4> <3+> |	
@@ -187,7 +187,6 @@ clallegro = \figuremode {
 
 vcadagio = \relative c' { 
 	\global
-	\key d \minor
   \clef tenor
 
   ees8 ees ees ees d d d d |
@@ -199,7 +198,7 @@ vcadagio = \relative c' {
   
   r2 r16ees g es bes' bes, d bes |
   r c ees c g' g, bes g aes bes c aes bes8 bes |
-  ees16 f g  ees aes bes c aes bes8 ees, bes' bes, |  
+  ees16 f g  ees aes bes c aes bes8 ees, bes' bes, | \bar "||"
 }
 
 cladagio = \figuremode { 
@@ -212,8 +211,8 @@ cladagio = \figuremode {
   <6 5>4 <6 5>8 <3> <_>2 |
   
   <_>2 <4->4 <4>4 |
-  <9>8 <6>8 <4>2 <4>8 <3> |
-  <_>4 <9>8 <6> <7>4 <4>8 <3> |  
+  <9 [_-]>8 <6>8 <4>2 <4>8 <3> |
+  <_>4 <9>8 <6> <7>4 <4>8 <3> | \bar "||"
 }
 
 vcallegroII = \relative c' { 
@@ -233,7 +232,7 @@ vcallegroII = \relative c' {
 
   bes8 bes bes bes ees4 r |
 	d r c r |
-	bes2 r\fermata |
+	bes2 r\fermata | \bar "||"
 }
 
 clallegroII = \figuremode { 
@@ -248,7 +247,7 @@ clallegroII = \figuremode {
 	<[6]>2 <_> |
 	<_>1 |
 	<6>2 <6 [_-]> |
-	<_>1 |
+	<_>1 | \bar "||"
 }
 
 vcadagioII = {
@@ -328,7 +327,7 @@ clvivaceII = \figuremode {
 	<9>4 <8>4 <_>4 |
 	<6 5 _->4 <_+>2 |
 	<_>2. |
-	<9>4 <8>4 <_>4 |
+	<9 _->4 <8>4 <_>4 |
 	<7 _+>2 <5>4 |
 	<7 5>4 <4>4 <3>4 |
 	<_>2. |	
@@ -429,7 +428,8 @@ clallegroIII = \figuremode {
 	<_>2 <_!> |
 	<_->2 <4>4 <3> |
 	<_->2 <_> |
-	<_>1*3 |
+	<_>2 <[_-]>2 |
+	<_>1*2 |
 	
 	<_>2 <6>4 <6> |
 	<6>4 <6> <6> <6> |

@@ -11,7 +11,7 @@ vlIIrvivace = \relative c' {
 	\set Score.measureLength = #(ly:make-moment 6 4)
 	d2 d, g |
 	\set Score.measureLength = #(ly:make-moment 3 4)
-	fis2. |
+	fis2. |\bar "||"
 }
 
 vlIIrgrave = \relative c'' { 
@@ -93,7 +93,6 @@ vlIIrallegro = \relative c'' {
 vlIIradagio = \relative c' { 
 	\global
 	\key d \minor
-	\time 4/4
 
 	g'8_\piano \repeat unfold 3 {g8} \repeat unfold 4 {f8} |
 	ees ees ees aes~_\forte aes g f8. bes16 |
@@ -102,7 +101,7 @@ vlIIradagio = \relative c' {
 	f8 bes4 a8 bes4 c |
 	d8 ees aes,4~ aes8 g f4 |
 	ees d8. bes'16 aes8 g f8. bes16 |
-	g4 c d,8 ees4 d8 |
+	g4 c d,8 ees4 d8 | 
 }
 
 vlIIrallegroII = \relative c' { 
@@ -123,7 +122,7 @@ vlIIrallegroII = \relative c' {
 	d8 f bes d, ees4 r |
 
 	f r ees r |
-	d2 r\fermata |
+	d2 r\fermata | \bar "||"
 }
 
 vlIIradagioII = {

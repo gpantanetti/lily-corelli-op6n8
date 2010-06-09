@@ -3,25 +3,25 @@
 \include "corelli_viii_part.ly"
 \include "corelli_viii_vcn.ly"
 
-\header { instrument = "Basso continuo (dal concertino)" }
+\header { instrument = "Violoncello del concertino" }
 
 \book {
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\vivace << \vcvivace \clvivace >> \bar "||"
+	\score { { \new Staff 
+		\vivace << \vcvivace \clvivace >>
 		\grave << \vcgrave \clgrave >>
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff 
 		\allegro << \vcallegro \clallegro >>
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\adagio \time 4/4 << \vcadagio \cladagio >> \bar "||"
-		\allegro << \vcallegroII \clallegroII >> \bar "||"
-		\adagio << \vcadagioII \cladagioII >> 
+	\score { { \new Staff 
+		\adagio \time 4/4 << \vcadagio \cladagio >>
+		\allegro << \vcallegroII \clallegroII >>
+		\adagio << \vcadagioII \cladagioII >>
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff 
 		\vivace << \vcvivaceII \clvivaceII >>
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff 
 		\allegro << \vcallegroIII \clallegroIII >>
 		\pastorale << \vcpastorale \clpastorale >>
 	} }

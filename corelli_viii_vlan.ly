@@ -11,7 +11,7 @@ vlavivace = \relative c' {
 	\set Score.measureLength = #(ly:make-moment 6 4)
 	a2 g g, |
 	\set Score.measureLength = #(ly:make-moment 3 4)
-	a2. |
+	a2. | \bar "||"
 }
 
 vlagrave = \relative c' { 
@@ -93,7 +93,6 @@ vlaadagio = \relative c' {
 	\global
 	\clef alto
 	\key d \minor
-	\time 4/4
 
 	ees8_\piano ees ees ees bes' bes, bes bes |
 	c c ees ees_\forte f g16 aes bes8. bes16 |
@@ -121,7 +120,7 @@ vlaallegroII = \relative c' {
 	\repeat unfold 8 {ees8} |
 	\repeat unfold 4 {bes8} bes4 r |
 	bes r c r |
-	f2 r\fermata |
+	f2 r\fermata | \bar "||"
 }
 
 vlaadagioII = \relative c' {
@@ -240,7 +239,7 @@ vlapastorale = \relative c' {
 	\key c \major
 	\time 12/8
 
-	d4. r4 r8 r2. |
+	d4.\repeatTie r4 r8 r2. |
 	R1.*4 |
 	\repeat unfold 3 <<{g2.}{g,2.}>> c4. d | 
 	g, r4 r8 r2. |

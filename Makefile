@@ -1,4 +1,4 @@
-PS = corelli_viii_score.ps corelli_viii_vl1.ps corelli_viii_vl1r.ps corelli_viii_vl2.ps corelli_viii_vl2r.ps corelli_viii_vla.ps corelli_viii_vc.ps corelli_viii_vcr.ps corelli_viii_cl.ps
+PS = corelli_viii_score.ps corelli_viii_vl1.ps corelli_viii_vl1r.ps corelli_viii_vl2.ps corelli_viii_vl2r.ps corelli_viii_vla.ps corelli_viii_vc.ps corelli_viii_vcr.ps corelli_viii_cl.ps corelli_viii_clr.ps
 PDF = $(PS:.ps=.pdf)
 DATE=`date +%y%m%d%H%M`
 

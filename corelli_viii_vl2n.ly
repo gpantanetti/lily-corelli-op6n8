@@ -66,7 +66,7 @@ vlIIallegro = \relative c'' {
 	g2 fis4 d'~ |
 
 	d c d2 \bar ":|.|:"
-	f4. f8 g2 |
+	fis4. fis8 g2 |
 	a4 d bes2 |
 	e,4. e8 f2 |
 	g4 c a2 |
@@ -94,7 +94,6 @@ vlIIallegro = \relative c'' {
 vlIIadagio = \relative c' { 
 	\global
 	\key d \minor
-	\time 4/4
 
 	r2 f16( bes) d( bes) f( d) f( bes) |
 	ees,8 ees' r4 aes,8 g f8. bes16 |

@@ -1,29 +1,29 @@
 \include "corelli_viii_header.ly"
 \include "corelli_viii_utilities.ly"
 \include "corelli_viii_part.ly"
-\include "corelli_viii_vcn.ly"
+\include "corelli_viii_vcrn.ly"
 
-\header { instrument = "Basso continuo" }
+\header { instrument = "Basso del concerto grosso" }
 
 \book {
 	\score { { \new Staff 
-		\vivace << \vcvivace \clvivace >> \bar "||"
-		\grave << \vcgrave \clgrave >>
+		\vivace << \vcrvivace \clrvivace >>
+		\grave << \vcrgrave \clrgrave >>
 	} }
 	\score { { \new Staff
-		\allegro << \vcallegro \clallegro >>
+		\allegro << \vcrallegro \clrallegro >>
 	} }
 	\score { { \new Staff
-		\adagio \time 4/4 \vcadagio \bar "||"
-		\allegro \vcallegroII \bar "||"
-		\adagio \vcadagioII
+		\adagio \time 4/4 << \vcradagio \clradagio >>
+		\allegro << \vcrallegroII \clrallegroII >>
+		\adagio << \vcradagioII \clradagioII >>
 	} }
 	\score { { \new Staff
-		\vivace \vcvivaceII
+		\vivace << \vcrvivaceII \clrvivaceII >>
 	} }
 	\score { { \new Staff
-		\allegro \vcallegroIII 
-		\pastorale \vcpastorale 
+		\allegro << \vcrallegroIII \clrallegroIII >>
+		\pastorale << \vcrpastorale \clrpastorale >>
 	} }
 }
 

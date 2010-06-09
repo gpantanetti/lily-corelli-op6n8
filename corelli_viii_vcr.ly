@@ -3,25 +3,25 @@
 \include "corelli_viii_part.ly"
 \include "corelli_viii_vcrn.ly"
 
-\header { instrument = "Violoncello del concerto grosso" }
+\header { instrument = "Basso del concerto grosso" }
 
 \book {
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\vivace \vcrvivace \bar "||"
+	\score { { \new Staff
+		\vivace \vcrvivace
 		\grave  \vcrgrave 
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\allegro \vcrallegro
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\adagio \time 4/4 \vcradagio \bar "||"
-		\allegro \vcrallegroII \bar "||"
+	\score { { \new Staff
+		\adagio \time 4/4 \vcradagio
+		\allegro \vcrallegroII
 		\adagio \vcradagioII \pageBreak
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\vivace \vcrvivaceII
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\allegro \vcrallegroIII 
 		\pastorale \vcrpastorale 
 	} }

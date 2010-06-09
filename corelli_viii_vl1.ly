@@ -6,22 +6,22 @@
 \header { instrument = "Violino I del concertino" }
 
 \book {
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\vivace \vlIvivace \bar "||"
-		\grave  \vlIgrave 
+	\score { { \new Staff
+		\vivace \vlIvivace
+		\grave \vlIgrave 
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\allegro \vlIallegro
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
-		\adagio \vlIadagio \bar "||"
-		\allegro \vlIallegroII \bar "||"
+	\score { { \new Staff
+		\adagio \time 4/4 \vlIadagio \bar "||"
+		\allegro \vlIallegroII
 		\adagio \vlIadagioII
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\vivace \vlIvivaceII
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\allegro \vlIallegroIII 
 		\pastorale \vlIpastorale 
 	} }

@@ -3,27 +3,25 @@
 \include "corelli_viii_part.ly"
 \include "corelli_viii_vcn.ly"
 
-%#(set-global-staff-size 16.4)
-
 \header { instrument = "Violoncello del concertino" }
 
 \book {
-	\score { { \new Staff % \with { \consists "Page_turn_engraver" }
-		\vivace \vcvivace \bar "||"
+	\score { { \new Staff
+		\vivace \vcvivace
 		\grave  \vcgrave 
 	} }
-	\score { { \new Staff % \with { \consists "Page_turn_engraver" } 
+	\score { { \new Staff
 		\allegro \vcallegro
 	} }
-	\score { { \new Staff % \with { \consists "Page_turn_engraver" } 
-		\adagio \vcadagio \bar "||"
-		\allegro \vcallegroII \bar "||"
+	\score { { \new Staff
+		\adagio \time 4/4 \key d \minor \vcadagio \bar "||"
+		\allegro \vcallegroII
 		\adagio \vcadagioII \pageBreak
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\vivace \vcvivaceII
 	} }
-	\score { { \new Staff \with { \consists "Page_turn_engraver" } \compressFullBarRests
+	\score { { \new Staff
 		\allegro \vcallegroIII 
 		\pastorale \vcpastorale 
 	} }

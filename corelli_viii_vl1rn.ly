@@ -91,7 +91,6 @@ vlIrallegro = \relative c'' {
 vlIradagio = \relative c'' { 
   \global
   \key d \minor
-  \time 4/4
 
   bes8_\piano \repeat unfold 7 { bes8 } |
   bes ees, aes c d,_\forte ees4 d8 |

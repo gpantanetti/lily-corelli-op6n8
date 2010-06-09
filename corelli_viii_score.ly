@@ -79,7 +79,7 @@
 				} >>
 				\new Staff << {
 					\set Staff.instrumentName = \markup \right-column {
-            "Violoncello "
+            "Basso "
               \line { \tiny "del concerto grosso " }
           }
 						<< \vcrvivace \clrvivace >> \bar "||"
@@ -116,7 +116,7 @@
           \vlaallegro
 				} >>
 				\new Staff << {
-          \vcrallegro
+          << \vcrallegro \clrallegro >>
 				} >>
       >>
 		
@@ -133,12 +133,12 @@
           \adagio \vlIadagioII
 				} >>
      		\new Staff << {
-          \time 4/4 \vlIIadagio \bar "||"
+          \vlIIadagio \bar "||"
           \vlIIallegroII \bar "||"
           \vlIIadagioII
 				} >> 
      		\new Staff << {
-					\time 4/4 << \vcadagio \cladagio >> \bar "||"
+					<< \vcadagio \cladagio >> \bar "||"
 					<< \vcallegroII \clallegroII >> \bar "||"
 					<< \vcadagioII \cladagioII >> 
 				} >>
@@ -146,24 +146,24 @@
 
 			\new StaffGroup <<
      		\new Staff << {
-          \time 4/4 \vlIradagio \bar "||"
+          \vlIradagio \bar "||"
           \vlIrallegroII \bar "||"
           \vlIradagioII
 				} >>
      		\new Staff << {
-          \time 4/4 \vlIIradagio \bar "||"
+          \vlIIradagio \bar "||"
           \vlIIrallegroII \bar "||"
           \vlIIradagioII
 				} >> 
      		\new Staff << {
-          \time 4/4 \vlaadagio \bar "||"
+          \vlaadagio \bar "||"
           \vlaallegroII \bar "||"
           \vlaadagioII
 				} >> 
      		\new Staff << {
-          \time 4/4 \vcradagio \bar "||"
-          \vcrallegroII \bar "||"
-          \vcradagioII
+          << \vcradagio \clradagio >> \bar "||"
+          << \vcrallegroII \clrallegroII >> \bar "||"
+          << \vcradagioII \clradagioII >>
 				} >>
       >>
 
@@ -196,7 +196,7 @@
           \vlavivaceII
 				} >>
 				\new Staff << {
-          \vcrvivaceII
+          << \vcrvivaceII \clrvivaceII >>
 				} >>
       >>
 		
@@ -236,8 +236,8 @@
           \vlapastorale 
 				} >>
 				\new Staff << {
-          \vcrallegroIII 
-          \vcrpastorale 
+          << \vcrallegroIII \clrallegroIII >>
+          << \vcrpastorale \clrpastorale >>
 				} >>
       >>
 		

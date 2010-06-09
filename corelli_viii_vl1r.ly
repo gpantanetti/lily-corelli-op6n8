@@ -3,21 +3,21 @@
 \include "corelli_viii_part.ly"
 \include "corelli_viii_vl1rn.ly"
 
-\header { instrument = "Violino I" }
+\header { instrument = "Violino I del concerto grosso" }
 
 #(set-global-staff-size 16.9)
 
 \book {
 	\score { { \new Staff 
-		\vivace \vlIrvivace \bar "||"
-		\grave  \vlIrgrave 
+		\vivace \vlIrvivace
+		\grave \vlIrgrave 
 	} }
 	\score { { \new Staff 
 		\allegro \vlIrallegro
 	} }
 	\score { { \new Staff 
-		\adagio \vlIradagio \bar "||"
-		\allegro \vlIrallegroII \bar "||"
+		\adagio \time 4/4 \vlIradagio
+		\allegro \vlIrallegroII
 		\adagio \vlIradagioII \pageBreak
 	} }
 	\score { { \new Staff 

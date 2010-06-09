@@ -7,15 +7,15 @@
 
 \book {
 	\score { { \new Staff
-		\vivace \vlIIrvivace \bar "||"
-		\grave  \vlIIrgrave 
+		\vivace \vlIIrvivace
+		\grave \vlIIrgrave 
 	} }
 	\score { { \new Staff
 		\allegro \vlIIrallegro
 	} }
 	\score { { \new Staff
-		\adagio \vlIIradagio \bar "||"
-		\allegro \vlIIrallegroII \bar "||"
+		\adagio \time 4/4 \vlIIradagio \bar "||"
+		\allegro \vlIIrallegroII
 		\adagio \vlIIradagioII
 	} }
 	\score { { \new Staff
