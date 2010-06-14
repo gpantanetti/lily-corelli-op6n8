@@ -93,14 +93,13 @@ vlIallegro = \relative c'' {
 
 vlIadagio = \relative c'' { 
 	\global
-	\key d \minor
 
 	g16( bes) ees( bes) g( ees) g( bes) f8 bes, r4 |
 	ees'16( g) bes( g) ees( c) aes( c) d,8 ees4 d8 |
 
 	ees8 ees'4 d8 ees,16( g) c4 bes8 |
 	c,16( ees) aes4 g8 aes,16( c) f4 ees8~ |
-	ees8 d8 c8. f16 d8 bes'4 aes8~ |
+	ees8[ d8 c8. f16] d8 bes'4 aes8~ |
 	aes8 g4 f8 bes, ees4 d8~ |
 	d8 c4 bes8 c16( d) ees8 ees8. d16 |
 	ees8 bes'4 aes g8 f4 |
@@ -187,7 +186,7 @@ vlIallegroIII = \relative c'' {
 	d2 g4. f8 |
 	ees8 g f ees d2 |
 	c \repeat unfold 3 { ees8 g d g } |
-	ees4 d \repeat unfold 3 { f8 a ees a } |
+	ees4 d \repeat unfold 3 { f8 a e? a } |
 	f4 e 
 	<< \repeat unfold 2 {bes' a | 
 	bes a g f | 

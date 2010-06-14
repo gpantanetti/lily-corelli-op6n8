@@ -14,7 +14,7 @@
 		\allegro \vlaallegro
 	} }
 	\score { { \new Staff
-		\adagio \time 4/4 \vlaadagio \bar "||"
+		\adagio \time 4/4 \key d \minor \vlaadagio \bar "||"
 		\allegro \vlaallegroII
 		\adagio \vlaadagioII \pageBreak
 	} }

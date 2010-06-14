@@ -15,6 +15,7 @@ rndf = \markup{ \center-align {\line { \bold{\italic (}
 piano = \markup { \italic Piano }
 pianissimo = \markup { \italic Pianissimo }
 forte = \markup { \italic Forte }
+forteb = \markup { \italic (Forte) }
 
 vivace = \mark \markup {\italic Vivace}
 allegro = \mark \markup {\italic Allegro}

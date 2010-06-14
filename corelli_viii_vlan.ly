@@ -92,7 +92,6 @@ vlaallegro = \relative c' {
 vlaadagio = \relative c' { 
 	\global
 	\clef alto
-	\key d \minor
 
 	ees8_\piano ees ees ees bes' bes, bes bes |
 	c c ees ees_\forte f g16 aes bes8. bes16 |
@@ -149,7 +148,7 @@ vlavivaceII = \relative c' {
 	f4 f f |
 	R2. |
 	a4. g8 f4 |
-	bes4 ees,4. a8 |
+	bes4 e,4. a8 |
 	a2. |
 	g4 r r|
 	c,4 r r |
@@ -267,7 +266,7 @@ vlapastorale = \relative c' {
 	e'4. r8 r a, e'4. r8 r b_\forte |
 	fis'4. r8 r b, fis'4. r4 r8 |
 	R1. |
-	r4 r8 r8 r g cis,4. b |
+	r4 r8 r8 r g cis,4. b | % cis? corretto?
 	fis' fis fis r4 r8 |
 	r2. r4 r8 r8 r b |
 	b4. r8 r g cis,4. r8 r fis |
@@ -278,7 +277,7 @@ vlapastorale = \relative c' {
 	R1.*2 |
 	r4 r8 r8 r d'
 	d4 fis8 a4 a8 |
-	fis4. r8 r b d4. d, |
+	fis4. r8 r g d'4. d, |
 	d r8 r g d'4. d, |
 	d r8 r d_\piano g4. r8 r d |
 	d4. r8 r b c4. r8 r c_\pianissimo |

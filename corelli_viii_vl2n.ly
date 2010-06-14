@@ -6,7 +6,7 @@ vlIIvivace = \relative c' {
 
 	d4 r r |
 	fis r r |
-	g f r8 f |
+	g f! r8 f |
 	ees2 ees'4 |
 	\set Score.measureLength = #(ly:make-moment 6 4)
 	d2 d, g |
@@ -31,7 +31,7 @@ vlIIgrave = \relative c'' {
 	ees2 d c1 |
 	bes2 bes1 aes2 |
 	g1 fis2 g2~ |
-	g f fis g |
+	g f! fis g |
 	g1~ g2 fis |
 	g\breve | \bar "|."
 }
@@ -75,7 +75,7 @@ vlIIallegro = \relative c'' {
 	
 	cis,8 a d2 cis4 |
 	d4. c!8 b g c4~|
-	c b c4. b8 |
+	c b c4. bes8 | % b8 Modificato in bes8
 	a f bes2 a4 |
 	r4 d c f |
 	r bes, a d |
@@ -93,15 +93,14 @@ vlIIallegro = \relative c'' {
 
 vlIIadagio = \relative c' { 
 	\global
-	\key d \minor
 
 	r2 f16( bes) d( bes) f( d) f( bes) |
-	ees,8 ees' r4 aes,8 g f8. bes16 |
+	ees,8 ees' r4 aes,8[ g f8. bes16] |
 	g8 g' f bes, r ees d g, |
 	r c bes ees, r aes g4 |
 	f8 bes4 a8 bes4 c |
 	d8 ees aes,4~ aes8 g f4 |
-	ees d8. bes'16 aes8 g f8. bes16 |
+	ees d8. bes'16 aes8[ g f8. bes16] |
 	g4 c d,8 ees4 d8 |
 }
 
@@ -123,7 +122,7 @@ vlIIallegroII = \relative c' {
 	d8 f bes d, ees4 r |
 
 	f r ees r |
-	d2 r\fermata |
+	d2 r\fermata | \bar "||"
 }
 
 vlIIadagioII = {

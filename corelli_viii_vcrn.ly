@@ -117,7 +117,6 @@ clrallegro = \figuremode {
 
 vcradagio = \relative c { 
 	\global
-	\key d \minor
   \clef bass
 
   ees4_\piano r d r |
@@ -163,7 +162,7 @@ vcrallegroII = \relative c' {
 
   bes8 bes bes bes ees4 r |
 	d r c r |
-	bes2 r\fermata |
+	bes2 r\fermata | \bar "||"
 }
 
 clrallegroII = { \clallegroII }
@@ -313,7 +312,7 @@ vcrallegroIII = \relative c' {
   c g' b, g' |
   
   c, g' b, g' |
-  c, d ees c |
+  c,_\forteb d ees c |
   d g, d' d |
   g2 r4 c,4_\piano |
   d g, d' d, |
@@ -413,7 +412,7 @@ vcrpastorale = \relative c {
 	\key c \major
 	\time 12/8
 
-  g4. r4 r8 r2. | R1.*4 |
+  g4.\repeatTie r4 r8 r2. | R1.*4 |
 	\vcrpastoralepiece
   d'4. d' d2. |
   d4. g, g2. |
@@ -453,7 +452,7 @@ vcrpastorale = \relative c {
   g4 a8 b4 g8_\piano e4. r8 r fis |
   g4. r8 r g c,4. r8 r c8_\pianissimo |
   b4. r8 r b c4 g8 d'4 d,8 |
-  g4. r8 r b8_\forte c4 g8 c4 a8 |
+  g4. r8 r b8_\forte c4 b8 c4 a8 |
 
   b4 a8 b4 g8 c4 b8 c b a |
   b4 a8 b4 g8 c4 b8 a4 g8 |

@@ -1,18 +1,6 @@
-vlIrvivace = \relative c'' { 
-  \global
-  \time 3/4
-  \key d \minor
-  \clef treble
+\include "corelli_viii_vl1n.ly"
 
-  bes4 r r |
-  c r r |
-  d d r8 d |
-  d4 g, c |
-  \set Score.measureLength = #(ly:make-moment 6 4)
-  c2 bes c |
-  \set Score.measureLength = #(ly:make-moment 3 4)
-  d2. |
-}
+vlIrvivace = { \vlIvivace }
 
 vlIrgrave = \relative c'' { 
   \global
@@ -90,14 +78,13 @@ vlIrallegro = \relative c'' {
 
 vlIradagio = \relative c'' { 
   \global
-  \key d \minor
 
   bes8_\piano \repeat unfold 7 { bes8 } |
   bes ees, aes c d,_\forte ees4 d8 |
 
   ees4 r r2 |
   r2 r4 r8 ees~ |
-  ees8 d8 c8. f16 d8 bes'4 aes8~ |
+  ees8[ d8 c8. f16] d8 bes'4 aes8~ |
   aes8 g4 f8 bes, ees4 d8~ |
   d8 c4 bes8 c16( d) ees8 ees8. d16 |
 
@@ -123,7 +110,7 @@ vlIrallegroII = \relative c' {
   << {f, bes \repeat unfold 3 { f bes }} {\tupla} >> g4 r |
   bes r a r |
 
-  bes2 r\fermata |
+  bes2 r\fermata | \bar "||"
 }
 
 vlIradagioII = {
@@ -234,7 +221,7 @@ vlIrallegroIII = \relative c'' {
 }
 
 vlIrpastoralepiece = \relative c'' {
-  \repeat unfold 3 <<g2. g,2.>>
+  \repeat unfold 2 <<g2. g,2.>>
   c4. d | g, r4 r8 \repeat unfold 3 <<d''2. d,>> |
   g,4. a d r4 r8 |
   \repeat unfold 3 {g'2.} g4. fis |
@@ -244,14 +231,14 @@ vlIrpastoralepiece = \relative c'' {
   r4 r8 r8 r8 fis b,( cis d) a( d cis) |
 }
 
-vlIrpastorale = \relative c'' {
+vlIrpastorale = \relative c' {
   \global
   \key c \major
   \time 12/8
 
-  \vlIrpastoralepiece
+  <<g'2.\repeatTie g,2.>> \vlIrpastoralepiece
 
-  d4. r8 r a b4( a8) b( a g) |
+  d''4. r8 r a b4( a8) b( a g) |
   a4 fis8 r r d' e4( d8) e( d c) |
   d4 b8 r r d g4( c,8) fis4( b,8) |
   e4( a,8) d4( g,8) c4. b |
@@ -277,9 +264,9 @@ vlIrpastorale = \relative c'' {
   r2. r8 r fis'8 b4. |
   r8 r8 b,8 e4.~ e4 fis8 d4 cis8 |
   d4. cis b2. |
-  \vlIrpastoralepiece
+  <<g2. g,2.>> \vlIrpastoralepiece
   
-  d2.~ d~ |
+  d''2.~ d~ |
   d~ d~ |
   d~_\piano d8 c( b) c4.~ |
   c8 b( a) b4.~ b4 e,8_\pianissimo a4.~ |

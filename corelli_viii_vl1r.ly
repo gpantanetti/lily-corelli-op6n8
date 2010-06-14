@@ -16,9 +16,9 @@
 		\allegro \vlIrallegro
 	} }
 	\score { { \new Staff 
-		\adagio \time 4/4 \vlIradagio
+		\adagio \time 4/4 \key d \minor \vlIradagio \bar "||"
 		\allegro \vlIrallegroII
-		\adagio \vlIradagioII \pageBreak
+		\adagio \vlIradagioII % \pageBreak
 	} }
 	\score { { \new Staff 
 		\vivace \vlIrvivaceII % \pageBreak

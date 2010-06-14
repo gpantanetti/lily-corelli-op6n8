@@ -1,40 +1,7 @@
-vlIIrvivace = \relative c' { 
-	\global
-	\time 3/4
-	\key d \minor
-	\clef treble
+\include "corelli_viii_vl2n.ly"
 
-	d4 r r |
-	fis r r |
-	g f r8 f |
-	ees2 ees'4 |
-	\set Score.measureLength = #(ly:make-moment 6 4)
-	d2 d, g |
-	\set Score.measureLength = #(ly:make-moment 3 4)
-	fis2. |\bar "||"
-}
-
-vlIIrgrave = \relative c'' { 
-	\global
-	\clef treble
-	\time 4/4
-	\set Score.measureLength = #(ly:make-moment 4 2)
-
-	r\breve |
-	r1 r2 g2~ |
-	g2 fis g g'~ |
-	g fis bes1 |
-	a2. bes4 e,2 ees |
-	d2 d1 c2~ |
-	c2 bes4 a g2 ees'2~ | 
-	
-	ees2 d c1 |
-	bes2 bes1 aes2 |
-	g1 fis2 g2~ |
-	g f fis g |
-	g1~ g2 fis |
-	g\breve | \bar "|."
-}
+vlIIrvivace = { \vlIIvivace }
+vlIIrgrave = { \vlIIgrave }
 
 vlIIrallegro = \relative c'' { 
 	\global
@@ -92,15 +59,14 @@ vlIIrallegro = \relative c'' {
 
 vlIIradagio = \relative c' { 
 	\global
-	\key d \minor
 
 	g'8_\piano \repeat unfold 3 {g8} \repeat unfold 4 {f8} |
-	ees ees ees aes~_\forte aes g f8. bes16 |
+	ees ees ees aes~_\forte aes[ g f8. bes16] |
 	g4 r r2 |
 	r r4 r8 g |
 	f8 bes4 a8 bes4 c |
 	d8 ees aes,4~ aes8 g f4 |
-	ees d8. bes'16 aes8 g f8. bes16 |
+	ees d8. bes'16 aes8[ g f8. bes16] |
 	g4 c d,8 ees4 d8 | 
 }
 
@@ -260,7 +226,7 @@ vlIIrpastorale = \relative c'' {
 	\key c \major
 	\time 12/8
 
-	g4. r4 r8 \repeat unfold 2 <<g2. g,2.>>
+	g4.\repeatTie r4 r8 \repeat unfold 2 <<g2. g,2.>>
     	c4. d4. | 
 	g,4. r4 r8 r2. |
 	\repeat unfold 2 <<d''2. d,>> |

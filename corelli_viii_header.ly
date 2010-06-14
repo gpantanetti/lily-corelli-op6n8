@@ -17,7 +17,7 @@
     oddFooterMarkup = \markup {
       \fill-line {
         "(c) 2010 Giuseppe Pantanetti"
-          "Corelli - Concerto VIII - ver. 1.4"
+          "Corelli - Concerto VIII - ver. 1.5"
           "CC License BY-NC-ND"
       }
     }

@@ -59,7 +59,7 @@ clgrave = \figuremode {
 	<_>2 <5> <4 2> <6 5> |
   <9>2 <6> <7> <6> |
   <6 4> <5 3+> <7> <6+> |
-  <4> <3> <9> <8> |
+  <4> <3+> <9> <8> | % <3+> Modificato dall'originale <3> 
   <4+ 2> <6>4 <_> <5 4>2 <5- 3-> |
   <6 5>4 <_> <_>2 <9 7 _-> <8 6> |
 
@@ -68,7 +68,7 @@ clgrave = \figuremode {
   <9> <8> <7 3!> <6- 4> |
   <6 5> <3-> <4+ 2> <6> |
   <7> <6> <7 3+> <6 4> |
-  <6 5>1 <4>2 <3> |
+  <6 5>1 <4>2 <3+> |
 	<_!>\breve | \bar "|."
 }
 
@@ -198,7 +198,7 @@ vcadagio = \relative c' {
   
   r2 r16ees g es bes' bes, d bes |
   r c ees c g' g, bes g aes bes c aes bes8 bes |
-  ees16 f g  ees aes bes c aes bes8 ees, bes' bes, | \bar "||"
+  ees16 f g  ees aes bes c aes bes8 ees, bes' bes, |
 }
 
 cladagio = \figuremode { 
@@ -212,7 +212,7 @@ cladagio = \figuremode {
   
   <_>2 <4->4 <4>4 |
   <9 [_-]>8 <6>8 <4>2 <4>8 <3> |
-  <_>4 <9>8 <6> <7>4 <4>8 <3> | \bar "||"
+  <_>4 <9>8 <6> <7>4 <4>8 <3> |
 }
 
 vcallegroII = \relative c' { 
@@ -402,7 +402,7 @@ vcallegroIII = \relative c' {
   c g' b, g' |
   
   c, g' b, g' |
-  c, d ees c |
+  c,_\forteb d ees c |
   d g, d' d |
   g2 r4 c,4_\piano |
   d g, d' d, |
@@ -487,8 +487,7 @@ clallegroIII = \figuremode {
 }
 
 vcpastoralepiece = \relative c' {
-  g2._\soli g |
-  g c,4. d |
+  g2. c,4. d |
 
   g, r4 r8 d'2. |
   d d |
@@ -523,6 +522,7 @@ vcpastorale = \relative c {
 	\key c \major
 	\time 12/8
 
+  g'2.\repeatTie_\soli g |
 	\vcpastoralepiece
   d4. d' d2. |
   d4. g, g2. |
@@ -555,6 +555,7 @@ vcpastorale = \relative c {
   e r8 r e fis4. b, |
   fis' fis, b2. | 
 
+  g'2._\soli g |
 	\vcpastoralepiece
   d4. r8 r g fis4 e8 fis4 d8 |
 
@@ -562,7 +563,7 @@ vcpastorale = \relative c {
   g4 a8 b4 g8_\piano e4. r8 r fis |
   g4. r8 r g c,4. r8 r c8_\pianissimo |
   b4. r8 r b c4 g8 d'4 d,8 |
-  g4. r8 r b8_\forte c4 g8 c4 a8 |
+  g4. r8 r b8_\forte c4 b8 c4 a8 |
 
   b4 a8 b4 g8 c4 b8 c b a |
   b4 a8 b4 g8 c4 b8 a4 g8 |

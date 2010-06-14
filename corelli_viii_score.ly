@@ -8,8 +8,7 @@
 \include "corelli_viii_vcn.ly"
 \include "corelli_viii_vcrn.ly"
 
-% #(set-global-staff-size 15.87)
-#(set-global-staff-size 14)
+#(set-global-staff-size 15)
 
 \layout {
 	\context { 
@@ -21,7 +20,7 @@
 }
 
 \paper  {
-%    %line-width =  180\mm
+  indent = 1.5\cm
 }
 
 \book { 
@@ -73,7 +72,7 @@
         		\vlIIrgrave 
 				} >>
 				\new Staff << {
-					\set Staff.instrumentName = "Viola "
+					\set Staff.instrumentName = "Alto Viola "
 		        \vlavivace \bar "||"
         		\vlagrave 
 				} >>
@@ -128,41 +127,41 @@
 
 			\new StaffGroup <<
      		\new Staff << {
-          \adagio \time 4/4 \vlIadagio \bar "||"
-          \allegro \vlIallegroII \bar "||"
+          \adagio \time 4/4 \key d \minor \vlIadagio \bar "||"
+          \allegro \vlIallegroII
           \adagio \vlIadagioII
 				} >>
      		\new Staff << {
-          \vlIIadagio \bar "||"
-          \vlIIallegroII \bar "||"
+          \time 4/4 \key d \minor \vlIIadagio
+          \vlIIallegroII
           \vlIIadagioII
 				} >> 
      		\new Staff << {
-					<< \vcadagio \cladagio >> \bar "||"
-					<< \vcallegroII \clallegroII >> \bar "||"
+					\time 4/4 \key d \minor << \vcadagio \cladagio >>
+					<< \vcallegroII \clallegroII >>
 					<< \vcadagioII \cladagioII >> 
 				} >>
       >>
 
 			\new StaffGroup <<
      		\new Staff << {
-          \vlIradagio \bar "||"
-          \vlIrallegroII \bar "||"
+          \time 4/4 \key d \minor \vlIradagio
+          \vlIrallegroII
           \vlIradagioII
 				} >>
      		\new Staff << {
-          \vlIIradagio \bar "||"
-          \vlIIrallegroII \bar "||"
+          \time 4/4 \key d \minor \vlIIradagio
+          \vlIIrallegroII
           \vlIIradagioII
 				} >> 
      		\new Staff << {
-          \vlaadagio \bar "||"
-          \vlaallegroII \bar "||"
+          \time 4/4 \key d \minor \vlaadagio
+          \vlaallegroII
           \vlaadagioII
 				} >> 
      		\new Staff << {
-          << \vcradagio \clradagio >> \bar "||"
-          << \vcrallegroII \clrallegroII >> \bar "||"
+          \time 4/4 \key d \minor << \vcradagio \clradagio >>
+          << \vcrallegroII \clrallegroII >>
           << \vcradagioII \clradagioII >>
 				} >>
       >>
