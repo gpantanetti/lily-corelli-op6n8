@@ -1,14 +1,14 @@
-\include "corelli_viii_header.ly"
-\include "corelli_viii_utilities.ly"
-\include "corelli_viii_part.ly"
-\include "corelli_viii_vcrn.ly"
+\include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_utilities.ly"
+\include "corelli-op6n8_part.ly"
+\include "corelli-op6n8_vcrn.ly"
 
 \header { instrument = "Basso del concerto grosso" }
 
 \book {
 	\score { { \new Staff
 		\vivace \vcrvivace
-		\grave  \vcrgrave 
+		\grave  \vcrgrave
 	} }
 	\score { { \new Staff
 		\allegro \vcrallegro
@@ -22,9 +22,7 @@
 		\vivace \vcrvivaceII
 	} }
 	\score { { \new Staff
-		\allegro \vcrallegroIII 
-		\pastorale \vcrpastorale 
+		\allegro \vcrallegroIII
+		\pastorale \vcrpastorale
 	} }
 }
-
-

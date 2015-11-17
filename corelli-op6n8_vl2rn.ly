@@ -1,20 +1,20 @@
-\include "corelli_viii_vl2n.ly"
+\include "corelli-op6n8_vl2n.ly"
 
 vlIIrvivace = { \vlIIvivace }
 vlIIrgrave = { \vlIIgrave }
 
-vlIIrallegro = \relative c'' { 
+vlIIrallegro = \relative c'' {
 	\global
 	\clef treble
 	\key d \minor
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
-	
+
 	R1 |
 	g'2 a |
 	bes4 r r2 |
 	r4 bes2 a4 |
-	
+
 	bes4 r r2 |
 	r2 r4 d,~ |
 	d8 g, c2 bes4 |
@@ -38,7 +38,7 @@ vlIIrallegro = \relative c'' {
 	r4 g'4 a f, |
 	R1 |
 	cis'4 r8 a' bes4. bes8 |
-	
+
 	cis,8 a d2 cis4 |
 	d4 r4 r2 |
 	r4 b c r |
@@ -57,7 +57,7 @@ vlIIrallegro = \relative c'' {
 	a2 g2 \bar ":|"
 }
 
-vlIIradagio = \relative c' { 
+vlIIradagio = \relative c' {
 	\global
 
 	g'8_\piano \repeat unfold 3 {g8} \repeat unfold 4 {f8} |
@@ -67,15 +67,15 @@ vlIIradagio = \relative c' {
 	f8 bes4 a8 bes4 c |
 	d8 ees aes,4~ aes8 g f4 |
 	ees d8. bes'16 aes8[ g f8. bes16] |
-	g4 c d,8 ees4 d8 | 
+	g4 c d,8 ees4 d8 |
 }
 
-vlIIrallegroII = \relative c' { 
+vlIIrallegroII = \relative c' {
 	\global
 
 	ees4 r g8 g g g |
 	g c, r4 ees' r |
-	
+
 	d8 d d d d g, r4 |
 	c8 c c c c f, r4|
 	bes8 bes bes bes bes ees, r4|
@@ -92,14 +92,14 @@ vlIIrallegroII = \relative c' {
 }
 
 vlIIradagioII = {
-	\vlIIradagio 
-	\relative c' { ees4 \repeat unfold 2 {ees'16( bes g ees) ees'4} 
+	\vlIIradagio
+	\relative c' { ees4 \repeat unfold 2 {ees'16( bes g ees) ees'4}
 	ees16( d c bes) c(_\piano bes aes g) aes( g f ees) |
 	d4 ees2 d4 |
 	ees1 | } \bar "|."
 }
 
-vlIIrvivaceII = \relative c'' { 
+vlIIrvivaceII = \relative c'' {
 	\global
 	\key d \minor
 	\time 3/4
@@ -150,7 +150,7 @@ vlIIrallegroIII = \relative c'' {
 	r2 g'4 g |
 	g g, r2 |
 	r2 a'4 a |
-	a a, 
+	a a,
 	<<{\repeat unfold 2 {r2 | f'4 e r2 | d4 c r2 | g4 f e2 | d2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
 	\bar ":|.|:"
 
@@ -158,9 +158,9 @@ vlIIrallegroIII = \relative c'' {
 	r2 \repeat unfold 3 {d'4( ees)} |
 	d2 r |
 	R1 |
-	r2 bes4 f | 
+	r2 bes4 f |
 	g( f) r2 |
-	
+
 	r2 g4( a) |
 	bes( a) r2|
       	r2 d4 c8 bes |
@@ -181,7 +181,7 @@ vlIIrallegroIII = \relative c'' {
 
 	bes d2 c4|
 	d2 r2|
-	R1 | 
+	R1 |
 	r2 d4 d |
 	c( bes) a( g)|
 	fis2 r2 |
@@ -194,7 +194,7 @@ vlIIrallegroIII = \relative c'' {
 	<< {\repeat unfold 2 {g2 r4 c4~ | c bes a2 |}} {s2 s4 s4_\forte s1 s2 s4 s4_\piano s1} >>
 
 	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2 \bar ":|" 
+        g2 \bar ":|"
 }
 
 vlIIrpastoralepiece = \relative c'' {
@@ -202,7 +202,7 @@ vlIIrpastoralepiece = \relative c'' {
     	c4. d | g, r4 r8 \repeat unfold 3 <<d''2. d,>> |
       	g,4. a d r4 r8 |
         r2. \repeat unfold 2 {g'2.} e8( d e) a,4 d8 |
-	
+
 	g,4. r4 r8 r2. |
 	R1.*2 |
 	r4 r8 r r a g( a fis) e4. |
@@ -227,12 +227,12 @@ vlIIrpastorale = \relative c'' {
 	\time 12/8
 
 	g4.\repeatTie r4 r8 \repeat unfold 2 <<g2. g,2.>>
-    	c4. d4. | 
+    	c4. d4. |
 	g,4. r4 r8 r2. |
 	\repeat unfold 2 <<d''2. d,>> |
       	g,4. a d r4 r8 |
         r2. \repeat unfold 2 {g'2.} e8( d e) a,4 d8 |
-	
+
 	b4. r4 r8 r2. |
 	R1.*2 |
 	r4 r8 r r a' g( a fis) e4. |
@@ -248,7 +248,7 @@ vlIIrpastorale = \relative c'' {
 	g4. r8 r d' e4. r8 r e |
 	fis4. r8 r fis g4. r8 r a|
 
-	d,4 g,8_\piano fis4. e d | 
+	d,4 g,8_\piano fis4. e d |
 	c b a r8 r d'_\forte |
 	c( d b) a4 d8 b4. g|
 	r4^\fermata r8 g4._\piano r2.^\fermata |
@@ -281,7 +281,7 @@ vlIIrpastorale = \relative c'' {
 	d,4. r8 r d'8 e4. r8 r e8_\pianissimo |
 	d4. r8 r d c( d b) a4 d8 |
 	b4. r8 r d,_\forte e4( d8) e4( c8)|
-	
+
 	d4( c8) d4( b8) e4( d8) e( d c)|
 	d4( c8) d4( b8) e4( d8) c4( b8)|
 	a4._\piano b a r8 r d |

@@ -1,16 +1,16 @@
-\include "corelli_viii_header.ly"
-\include "corelli_viii_utilities.ly"
-\include "corelli_viii_part.ly"
-\include "corelli_viii_vlan.ly"
+\include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_utilities.ly"
+\include "corelli-op6n8_part.ly"
+\include "corelli-op6n8_vlan.ly"
 
 \header { instrument = "Alto Viola" }
 
 \book {
-	\score { { \new Staff 
+	\score { { \new Staff
 		\vivace \vlavivace
-		\grave \vlagrave 
+		\grave \vlagrave
 	} }
-	\score { { \new Staff 
+	\score { { \new Staff
 		\allegro \vlaallegro
 	} }
 	\score { { \new Staff
@@ -23,8 +23,6 @@
 	} }
 	\score { { \new Staff
 		\allegro \vlaallegroIII \break
-		\pastorale \vlapastorale 
+		\pastorale \vlapastorale
 	} }
 }
-
-

@@ -1,8 +1,8 @@
-\include "corelli_viii_vl1n.ly"
+\include "corelli-op6n8_vl1n.ly"
 
 vlIrvivace = { \vlIvivace }
 
-vlIrgrave = \relative c'' { 
+vlIrgrave = \relative c'' {
   \global
   \clef treble
   \time 4/4
@@ -13,7 +13,7 @@ vlIrgrave = \relative c'' {
   d a'1 g2 |
   cis, d1 c2~ |
   c bes1 a4 g |
-  fis2 d'1 c4 bes | 
+  fis2 d'1 c4 bes |
   a2 bes1 a2~ |
   a g4 f e!2 f~ |
   f ees d d' |
@@ -22,7 +22,7 @@ vlIrgrave = \relative c'' {
   g\breve | \bar "|."
 }
 
-vlIrallegro = \relative c'' { 
+vlIrallegro = \relative c'' {
   \global
   \clef treble
   \key d \minor
@@ -76,7 +76,7 @@ vlIrallegro = \relative c'' {
   g fis g2 \bar ":|"
 }
 
-vlIradagio = \relative c'' { 
+vlIradagio = \relative c'' {
   \global
 
   bes8_\piano \repeat unfold 7 { bes8 } |
@@ -91,7 +91,7 @@ vlIradagio = \relative c'' {
   ees8 bes'4 aes g8 f4 |
 }
 
-vlIrallegroII = \relative c' { 
+vlIrallegroII = \relative c' {
   \global
 
   << {\repeat unfold 4 { ees16 g }} {\tupla} >> << {\repeat unfold 4 { d16 g }} {\tupla} >>|
@@ -114,14 +114,14 @@ vlIrallegroII = \relative c' {
 }
 
 vlIradagioII = {
-  \vlIradagio 
-  \relative c'' { \repeat unfold 2 { ees16( bes g ees) ees'4 } | 
+  \vlIradagio
+  \relative c'' { \repeat unfold 2 { ees16( bes g ees) ees'4 } |
   ees16( d c bes) c( bes aes g) aes_\piano( g f ees) c'(bes aes g) |
   f4 g f4. bes8 |
   g1 | } \bar "|."
 }
 
-vlIrvivaceII = \relative c'' { 
+vlIrvivaceII = \relative c'' {
   \global
   \key d \minor
   \time 3/4
@@ -166,12 +166,12 @@ vlIrallegroIII = \relative c'' {
   fis } r2 | R1 |
   r2 g'4. f8 |
   ees8 g f ees d2 |
-  c r2 | 
+  c r2 |
   r2 ees4 d |
   ees4 d r2 |
   r2 f4 e |
-  f4 e r2 | 
-  bes'4 a r2 | 
+  f4 e r2 |
+  bes'4 a r2 |
   g4 f r2 |
   cis4 d2 cis4 |
   d2 r2 |
@@ -207,7 +207,7 @@ vlIrallegroIII = \relative c'' {
   R1 |
   r2 g'4( f) |
   ees( d) c( bes) |
-  a2 r2 | 
+  a2 r2 |
   R1 |
   r4 \repeat unfold 2 { d g2~ g4 } d g d |
   fis g2 fis4 |
@@ -217,7 +217,7 @@ vlIrallegroIII = \relative c'' {
   g2 r4 ees'4_\piano |
   fis,4 g2 fis4 |
   \set Score.measureLength = #(ly:make-moment 2 4)
-  g2 \bar ":|" 
+  g2 \bar ":|"
 }
 
 vlIrpastoralepiece = \relative c'' {
@@ -265,7 +265,7 @@ vlIrpastorale = \relative c' {
   r8 r8 b,8 e4.~ e4 fis8 d4 cis8 |
   d4. cis b2. |
   <<g2. g,2.>> \vlIrpastoralepiece
-  
+
   d''2.~ d~ |
   d~ d~ |
   d~_\piano d8 c( b) c4.~ |

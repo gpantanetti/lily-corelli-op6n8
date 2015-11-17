@@ -1,14 +1,14 @@
-\include "corelli_viii_header.ly"
-\include "corelli_viii_utilities.ly"
-\include "corelli_viii_part.ly"
-\include "corelli_viii_vl2rn.ly"
+\include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_utilities.ly"
+\include "corelli-op6n8_part.ly"
+\include "corelli-op6n8_vl2rn.ly"
 
 \header { instrument = "Violino II del concerto grosso" }
 
 \book {
 	\score { { \new Staff
 		\vivace \vlIIrvivace
-		\grave \vlIIrgrave 
+		\grave \vlIIrgrave
 	} }
 	\score { { \new Staff
 		\allegro \vlIIrallegro
@@ -23,8 +23,6 @@
 	} }
 	\score { { \new Staff
 		\allegro \vlIIrallegroIII
-		\pastorale \vlIIrpastorale 
+		\pastorale \vlIIrpastorale
 	} }
 }
-
-

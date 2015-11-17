@@ -1,20 +1,20 @@
-\include "corelli_viii_header.ly"
-\include "corelli_viii_utilities.ly"
-\include "corelli_viii_vl1n.ly"
-\include "corelli_viii_vl2n.ly"
-\include "corelli_viii_vl1rn.ly"
-\include "corelli_viii_vl2rn.ly"
-\include "corelli_viii_vlan.ly"
-\include "corelli_viii_vcn.ly"
-\include "corelli_viii_vcrn.ly"
+\include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_utilities.ly"
+\include "corelli-op6n8_vl1n.ly"
+\include "corelli-op6n8_vl2n.ly"
+\include "corelli-op6n8_vl1rn.ly"
+\include "corelli-op6n8_vl2rn.ly"
+\include "corelli-op6n8_vlan.ly"
+\include "corelli-op6n8_vcn.ly"
+\include "corelli-op6n8_vcrn.ly"
 
 #(set-global-staff-size 15)
 
 \layout {
-	\context { 
-		\Score \override BarLine #'hair-thickness = #1.2 
+	\context {
+		\Score \override BarLine #'hair-thickness = #1.2
 	}
-	\context { 
+	\context {
 		\Staff \override VerticalAxisGroup #'minimum-Y-extent = #'(-4.5 . 4.5)
 	}
 }
@@ -23,7 +23,7 @@
   indent = 1.5\cm
 }
 
-\book { 
+\book {
 
 	\score {
 		{ <<
@@ -42,8 +42,8 @@
               \line { \tiny "del concertino " }
           }
           \vlIIvivace \bar "||"
-          \vlIIgrave 
-				} >> 
+          \vlIIgrave
+				} >>
      		\new Staff << {
 					\set Staff.instrumentName = \markup \right-column {
             "Violoncello "
@@ -61,7 +61,7 @@
               \line { \tiny "del concerto grosso " }
           }
 		        \vlIrvivace \bar "||"
-        		\vlIrgrave 
+        		\vlIrgrave
 				} >>
      		\new Staff << {
 					\set Staff.instrumentName = \markup \right-column {
@@ -69,12 +69,12 @@
               \line { \tiny "del concerto grosso " }
           }
 		        \vlIIrvivace \bar "||"
-        		\vlIIrgrave 
+        		\vlIIrgrave
 				} >>
 				\new Staff << {
 					\set Staff.instrumentName = "Alto Viola "
 		        \vlavivace \bar "||"
-        		\vlagrave 
+        		\vlagrave
 				} >>
 				\new Staff << {
 					\set Staff.instrumentName = \markup \right-column {
@@ -85,7 +85,7 @@
 						<< \vcrgrave \clrgrave >>
 				} >>
       >>
-		
+
     >> }
   }
 
@@ -97,8 +97,8 @@
           \allegro \vlIallegro
 				} >>
      		\new Staff << {
-          \vlIIallegro 
-				} >> 
+          \vlIIallegro
+				} >>
      		\new Staff << {
           << \vcallegro \clallegro >>
 				} >>
@@ -106,10 +106,10 @@
 
 			\new StaffGroup <<
      		\new Staff << {
-          \vlIrallegro 
+          \vlIrallegro
 				} >>
      		\new Staff << {
-          \vlIIrallegro 
+          \vlIIrallegro
 				} >>
 				\new Staff << {
           \vlaallegro
@@ -118,7 +118,7 @@
           << \vcrallegro \clrallegro >>
 				} >>
       >>
-		
+
     >> }
   }
 
@@ -135,11 +135,11 @@
           \time 4/4 \key d \minor \vlIIadagio
           \vlIIallegroII
           \vlIIadagioII
-				} >> 
+				} >>
      		\new Staff << {
 					\time 4/4 \key d \minor << \vcadagio \cladagio >>
 					<< \vcallegroII \clallegroII >>
-					<< \vcadagioII \cladagioII >> 
+					<< \vcadagioII \cladagioII >>
 				} >>
       >>
 
@@ -153,12 +153,12 @@
           \time 4/4 \key d \minor \vlIIradagio
           \vlIIrallegroII
           \vlIIradagioII
-				} >> 
+				} >>
      		\new Staff << {
           \time 4/4 \key d \minor \vlaadagio
           \vlaallegroII
           \vlaadagioII
-				} >> 
+				} >>
      		\new Staff << {
           \time 4/4 \key d \minor << \vcradagio \clradagio >>
           << \vcrallegroII \clrallegroII >>
@@ -178,7 +178,7 @@
 				} >>
      		\new Staff << {
           \vlIIvivaceII
-				} >> 
+				} >>
      		\new Staff << {
           << \vcvivaceII \clvivaceII >>
 				} >>
@@ -198,7 +198,7 @@
           << \vcrvivaceII \clrvivaceII >>
 				} >>
       >>
-		
+
     >> }
   }
 
@@ -208,13 +208,13 @@
 
 			\new StaffGroup <<
      		\new Staff << {
-          \allegro \vlIallegroIII 
-          \pastorale \vlIpastorale 
+          \allegro \vlIallegroIII
+          \pastorale \vlIpastorale
 				} >>
      		\new Staff << {
-          \vlIIallegroIII 
-          \vlIIpastorale 
-				} >> 
+          \vlIIallegroIII
+          \vlIIpastorale
+				} >>
      		\new Staff << {
           << \vcallegroIII \clallegroIII >>
           << \vcpastorale \clpastorale >>
@@ -223,29 +223,24 @@
 
 			\new StaffGroup <<
      		\new Staff << {
-          \vlIrallegroIII 
-          \vlIrpastorale 
+          \vlIrallegroIII
+          \vlIrpastorale
 				} >>
      		\new Staff << {
-          \vlIIrallegroIII 
-          \vlIIrpastorale 
+          \vlIIrallegroIII
+          \vlIIrpastorale
 				} >>
 				\new Staff << {
-          \vlaallegroIII 
-          \vlapastorale 
+          \vlaallegroIII
+          \vlapastorale
 				} >>
 				\new Staff << {
           << \vcrallegroIII \clrallegroIII >>
           << \vcrpastorale \clrpastorale >>
 				} >>
       >>
-		
+
     >> }
   }
 
 }
-
-
-
-
-

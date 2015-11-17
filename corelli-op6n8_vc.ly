@@ -1,14 +1,14 @@
-\include "corelli_viii_header.ly"
-\include "corelli_viii_utilities.ly"
-\include "corelli_viii_part.ly"
-\include "corelli_viii_vcn.ly"
+\include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_utilities.ly"
+\include "corelli-op6n8_part.ly"
+\include "corelli-op6n8_vcn.ly"
 
 \header { instrument = "Violoncello del concertino" }
 
 \book {
 	\score { { \new Staff
 		\vivace \vcvivace
-		\grave  \vcgrave 
+		\grave  \vcgrave
 	} }
 	\score { { \new Staff
 		\allegro \vcallegro
@@ -22,8 +22,7 @@
 		\vivace \vcvivaceII
 	} }
 	\score { { \new Staff
-		\allegro \vcallegroIII 
-		\pastorale \vcpastorale 
+		\allegro \vcallegroIII
+		\pastorale \vcpastorale
 	} }
 }
-
