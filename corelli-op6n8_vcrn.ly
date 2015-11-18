@@ -13,54 +13,59 @@ vcrallegro = \relative c {
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
 
-  R1*1 |
-  r8 g bes g c a d d, |
-  g4 r r2 |
-  r8 bes d bes ees c f f, |
-  bes4 r r2 |
+	\repeat volta 2 {
+		R1*1 |
+		r8 g bes g c a d d, |
+		g4 r r2 |
+		r8 bes d bes ees c f f, |
+		bes4 r r2 |
 
-  r2 r4 r8 d |
-  ees d ees c d fis g bes, |
-  c a d d, g4 r |
-  R1*2 |
+		r2 r4 r8 d |
+		ees d ees c d fis g bes, |
+		c a d d, g4 r |
+		R1*2 |
 
-  % |
-  r2 f'4 r8 d |
-  ees f g d ees c f f, |
-  bes4 r r2 |
-  R1*1 |
+		% |
+		r2 f'4 r8 d |
+		ees f g d ees c f f, |
+		bes4 r r2 |
+		R1*1 |
 
-  bes8 c d e f g a fis |
-  g a bes c d d, f d |
-  ees f g a bes bes, d bes |
-  c d ees c d d' ees bes |
-  c a d d, g4 f |
+		bes8 c d e f g a fis |
+		g a bes c d d, f d |
+		ees f g a bes bes, d bes |
+		c d ees c d d' ees bes |
+		c a d d, g4 f |
 
-  ees2 d |
-  ees2 d \bar ":|.|:"
-  R1*1 | r4 d g g, |
-  R1*1 | r4 c f f, |
+		ees2 d |
+		ees2 d
+	}
 
-  R1*1 |
-  a'4 r8 f g a bes g |
-  a cis d f, g e a a, |
-  d4 r r2 |
-  r4 g c, r |
+	\repeat volta 2 {
+		R1*1 | r4 d g g, |
+		R1*1 | r4 c f f, |
 
-  r2 r4 f |
-  bes,8 bes' d bes f' f, a f |
-  g a bes c d d, f d |
-  ees f g a bes bes, d bes |
-  c d ees c d d' ees bes |
+		R1*1 |
+		a'4 r8 f g a bes g |
+		a cis d f, g e a a, |
+		d4 r r2 |
+		r4 g c, r |
 
-  c a d d, g bes_\piano d bes |
-  f' f, a f g a bes c |
-  d d, f d ees f g a |
-  bes bes, d bes c d ees c |
-  d d' ees bes c a d d, |
+		r2 r4 f |
+		bes,8 bes' d bes f' f, a f |
+		g a bes c d d, f d |
+		ees f g a bes bes, d bes |
+		c d ees c d d' ees bes |
 
-  g f_\forte ees c d d ees bes |
-  c a d d, g2 \bar ":|"
+		c a d d, g bes_\piano d bes |
+		f' f, a f g a bes c |
+		d d, f d ees f g a |
+		bes bes, d bes c d ees c |
+		d d' ees bes c a d d, |
+
+		g f_\forte ees c d d ees bes |
+		c a d d, g2
+	}
 }
 
 clrallegro = \figuremode {
@@ -69,50 +74,54 @@ clrallegro = \figuremode {
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
 
-	<_>1 |
+	\repeat volta 2 {
+		<_>1 |
+		<_>2 <6 5 _->4 <_+> |
+		<_>1 |
+		<_>2 <6 5>4 <3> |
+		<_>1 |
+		<_>2 <_>4 <_>8 <_+> |
+		<7>4 <6> <7 _+>2 |
+		<6 5 _->4 <_+> <_>2 |
+		<_>1*2 |
+		<_>2 <7>4 <_> |
 
-	<_>2 <6 5 _->4 <_+> |
-	<_>1 |
-	<_>2 <6 5>4 <3> |
-  <_>1 |
-  <_>2 <_>4 <_>8 <_+> |
-  <7>4 <6> <7 _+>2 |
-  <6 5 _->4 <_+> <_>2 |
-  <_>1*2 |
-  <_>2 <7>4 <_> |
+		<_>4 <5> <6 5> <3> |
+		<_>1*2 |
+		<9>4 <6> <4>2 |
+		<9>4 <6> <4> <[6]> |
+		<9>4 <6-> <4> <[6]> |
 
-  <_>4 <5> <6 5> <3> |
-  <_>1*2 |
-  <9>4 <6> <4>2 |
-  <9>4 <6> <4> <[6]> |
-  <9>4 <6-> <4> <[6]> |
+		<9>4 <6> <7 _+> <5> |
+		<6 5>4 <_+> <_> <6> |
 
-  <9>4 <6> <7 _+> <5> |
-  <6 5>4 <_+> <_> <6> |
+		<7>4 <6> <_+>2 |
+		<7>4 <6> <_+>2
+	}
 
-  <7>4 <6> <_+>2 |
-  <7>4 <6> <_+>2 \bar ":|.|:"
-  <_>1 |
-  <_>4 <_+> <_>2 |
-  <_>1*3 |
-  <_+>2 <9>4 <6> |
+	\repeat volta 2 {
+		<_>1 |
+		<_>4 <_+> <_>2 |
+		<_>1*3 |
+		<_+>2 <9>4 <6> |
 
-  <7 _+>2 <6 5>4 <_+> |
-  <_>1 |
-  <_>4 <_!> <_->2 |
-  <_>1 |
-  <_>4 <[6]> <4> <[6]> |
-  <9>4 <6> <4> <[6]> |
-  <9>4 <6> <4> <[6]> |
-  <9 _->4 <6> <7 _+> <5>8 <[6]> |
-  <6 5 _->4 <_+> <_> <[6]> |
-  <4>4 <[6]> <9> <6> |
-  <4>4 <[6]> <9> <6> |
-  <4>4 <[6]> <9 _-> <6> |
-  <7 _+>4 <5> <6 5 _-> <_+> |
+		<7 _+>2 <6 5>4 <_+> |
+		<_>1 |
+		<_>4 <_!> <_->2 |
+		<_>1 |
+		<_>4 <[6]> <4> <[6]> |
+		<9>4 <6> <4> <[6]> |
+		<9>4 <6> <4> <[6]> |
+		<9 _->4 <6> <7 _+> <5>8 <[6]> |
+		<6 5 _->4 <_+> <_> <[6]> |
+		<4>4 <[6]> <9> <6> |
+		<4>4 <[6]> <9> <6> |
+		<4>4 <[6]> <9 _-> <6> |
+		<7 _+>4 <5> <6 5 _-> <_+> |
 
-  <_>4 <6> <7 _+> <5> |
-  <6 5 _->4 <_+> <_>2 | \bar ":|"
+		<_>4 <6> <7 _+> <5> |
+		<6 5 _->4 <_+> <_>2
+	}
 }
 
 vcradagio = \relative c {

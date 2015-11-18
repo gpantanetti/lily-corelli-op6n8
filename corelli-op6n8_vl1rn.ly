@@ -29,51 +29,56 @@ vlIrallegro = \relative c'' {
   \time 4/4
   \set Score.measureLength = #(ly:make-moment 4 4)
 
-  R1 |
-  r4 g'2 fis4 |
-  g r4 r2 |
-  bes2 c |
-  d4 r4 r2 |
-  r2 r4 fis,4 |
+  \repeat volta 2 {
+      R1 |
+      r4 g'2 fis4 |
+      g r4 r2 |
+      bes2 c |
+      d4 r4 r2 |
+      r2 r4 fis,4 |
 
-  g4. a8 fis d g4~ |
-  g fis g r4 |
-  R1*2 |
-  r2 c,4 r8 d |
-  g,8 a bes2 a4 |
-  bes r4 r2 |
-  R1 |
-  r4 d' c2 |
-  bes a |
-  g f |
+      g4. a8 fis d g4~ |
+      g fis g r4 |
+      R1*2 |
+      r2 c,4 r8 d |
+      g,8 a bes2 a4 |
+      bes r4 r2 |
+      R1 |
+      r4 d' c2 |
+      bes a |
+      g f |
 
-  ees fis,4 g~ |
-  g fis g d'~ |
-  d c d a |
-  g2 fis \bar ":|.|:"
-  R1 |
-  r4 fis' g bes, |
-  R1 |
-  r4 e f a, |
-  R1 |
-  e'4 a4. d,8 g4~ |
+      ees fis,4 g~ |
+      g fis g d'~ |
+      d c d a |
+      g2 fis
+  }
 
-  g f e2 |
-  d4 r r2 |
-  r4 d ees r |
-  r2 r4 c |
-  d bes' r a |
-  bes, g' r f |
-  g, ees' r d |
-  ees, c'2 bes4 |
-  a2 g4 bes'_\piano |
-  r a bes, g' |
+  \repeat volta 2 {
+      R1 |
+      r4 fis' g bes, |
+      R1 |
+      r4 e f a, |
+      R1 |
+      e'4 a4. d,8 g4~ |
 
-  r f g, ees' |
-  r d ees, c'~ |
-  c bes a2 |
-  g4 ees'_\forte fis, g~ |
-  g fis g2 \bar ":|"
+      g f e2 |
+      d4 r r2 |
+      r4 d ees r |
+      r2 r4 c |
+      d bes' r a |
+      bes, g' r f |
+      g, ees' r d |
+      ees, c'2 bes4 |
+      a2 g4 bes'_\piano |
+      r a bes, g' |
+
+      r f g, ees' |
+      r d ees, c'~ |
+      c bes a2 |
+      g4 ees'_\forte fis, g~ |
+      g fis g2
+  }
 }
 
 vlIradagio = \relative c'' {

@@ -1,4 +1,4 @@
-vlIIvivace = \relative c' { 
+vlIIvivace = \relative c' {
 	\global
 	\time 3/4
 	\key d \minor
@@ -14,7 +14,7 @@ vlIIvivace = \relative c' {
 	fis2. |
 }
 
-vlIIgrave = \relative c'' { 
+vlIIgrave = \relative c'' {
 	\global
 	\clef treble
 	\time 4/4
@@ -26,8 +26,8 @@ vlIIgrave = \relative c'' {
 	g fis bes1 |
 	a2. bes4 e,2 ees |
 	d2 d1 c2~ |
-	c2 bes4 a g2 ees'2~ | 
-	
+	c2 bes4 a g2 ees'2~ |
+
 	ees2 d c1 |
 	bes2 bes1 aes2 |
 	g1 fis2 g2~ |
@@ -36,62 +36,68 @@ vlIIgrave = \relative c'' {
 	g\breve | \bar "|."
 }
 
-vlIIallegro = \relative c'' { 
+vlIIallegro = \relative c'' {
 	\global
 	\clef treble
 	\key d \minor
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
-	
-	r4 g'2 fis4 |
-	g2 a |
-	bes c |
-	d4 bes2 a4 |
-	r4 d c2 |
-	bes a4 d,~ |
-	d8 g, c2 bes4 |
-	a2 g4 r |
-	c2~ c4 bes |
-	ees2~ ees4 d |
 
-	g2 a4 bes |
-	ees, d c2 |
-	bes4 r4 a'2~ |
-	a4 g c2~ |
-	c4 bes2 a4~ |
-	a4 g2 f4~ |
-	f ees2 d4~ |
-	d c2 bes4 |
-	a2 g4 a |
-	g2 fis4 d'~ |
+	\repeat volta 2 {
 
-	d c d2 \bar ":|.|:"
-	fis4. fis8 g2 |
-	a4 d bes2 |
-	e,4. e8 f2 |
-	g4 c a2 |
-	d,4. d8 e f e d |
-	cis4 r8 a' bes4. bes8 |
-	
-	cis,8 a d2 cis4 |
-	d4. c!8 b g c4~|
-	c b c4. bes8 | % b8 Modificato in bes8
-	a f bes2 a4 |
-	r4 d c f |
-	r bes, a d |
-	r g, f bes |
+		r4 g'2 fis4 |
+		g2 a |
+		bes c |
+		d4 bes2 a4 |
+		r4 d c2 |
+		bes a4 d,~ |
+		d8 g, c2 bes4 |
+		a2 g4 r |
+		c2~ c4 bes |
+		ees2~ ees4 d |
 
-	r ees fis, g~ |
-	g fis r d'_\piano |
-	c f r bes,|
-	a d r g,|
-	f bes r ees|
-	fis, g2 fis4|
-	g c2_\forte bes4|
-	a2 g2 \bar ":|"
+		g2 a4 bes |
+		ees, d c2 |
+		bes4 r4 a'2~ |
+		a4 g c2~ |
+		c4 bes2 a4~ |
+		a4 g2 f4~ |
+		f ees2 d4~ |
+		d c2 bes4 |
+		a2 g4 a |
+		g2 fis4 d'~ |
+
+		d c d2
+	}
+
+	\repeat volta 2 {
+		fis4. fis8 g2 |
+		a4 d bes2 |
+		e,4. e8 f2 |
+		g4 c a2 |
+		d,4. d8 e f e d |
+		cis4 r8 a' bes4. bes8 |
+
+		cis,8 a d2 cis4 |
+		d4. c!8 b g c4~|
+		c b c4. bes8 | % b8 Modificato in bes8
+		a f bes2 a4 |
+		r4 d c f |
+		r bes, a d |
+		r g, f bes |
+
+		r ees fis, g~ |
+		g fis r d'_\piano |
+		c f r bes,|
+		a d r g,|
+		f bes r ees|
+		fis, g2 fis4|
+		g c2_\forte bes4|
+		a2 g2
+	}
 }
 
-vlIIadagio = \relative c' { 
+vlIIadagio = \relative c' {
 	\global
 
 	r2 f16( bes) d( bes) f( d) f( bes) |
@@ -104,12 +110,12 @@ vlIIadagio = \relative c' {
 	g4 c d,8 ees4 d8 |
 }
 
-vlIIallegroII = \relative c' { 
+vlIIallegroII = \relative c' {
 	\global
 
 	ees4 r g8 g g g |
 	g c, r4 ees' r |
-	
+
 	d8 d d d d g, r4 |
 	c8 c c c c f, r4|
 	bes8 bes bes bes bes ees, r4|
@@ -126,14 +132,14 @@ vlIIallegroII = \relative c' {
 }
 
 vlIIadagioII = {
-	\vlIIadagio 
-	\relative c' { ees4 \repeat unfold 2 {ees'16( bes g ees) ees'4} 
+	\vlIIadagio
+	\relative c' { ees4 \repeat unfold 2 {ees'16( bes g ees) ees'4}
 	ees16( d c bes) c(_\piano bes aes g) aes( g f ees) |
 	d4 ees2 d4 |
 	ees1 | } \bar "|."
 }
 
-vlIIvivaceII = \relative c'' { 
+vlIIvivaceII = \relative c'' {
 	\global
 	\key d \minor
 	\time 3/4
@@ -160,7 +166,7 @@ vlIIvivaceII = \relative c'' {
 	c4 c2|
 	f,2 d'4|
 	c4. ees8( d c)|
-	
+
 	bes2 d4|
 	c8( bes) a2|
 	g d'4_\piano|
@@ -188,7 +194,7 @@ vlIIallegroIII = \relative c'' {
 
 	g2 a4 a |
 	a a, a' a |
-	a2 
+	a2
 	<<{\repeat unfold 2 {f4 e | f e d c | d c bes a | g f e2 | d2}}{s2 | s1*3 | s2 s2_\piano | s1*3 | s2}>>
 	\bar ":|.|:"
 
@@ -196,8 +202,8 @@ vlIIallegroIII = \relative c'' {
 	fis2 \repeat unfold 3 {d4( ees)} |
 	d2 d4 d |
 	ees(  d) c( bes) |
-	a2 \repeat unfold 2 {bes4 f g( f) } 
-	
+	a2 \repeat unfold 2 {bes4 f g( f) }
+
 	\repeat unfold 2 {g4( a) bes( a)} d c8 bes |
 	a4 bes2 a4 |
 	bes2 r|
@@ -226,13 +232,13 @@ vlIIallegroIII = \relative c'' {
 	<< {\repeat unfold 2 {g2 r4 c4~ | c bes a2 |}} {s2 s4 s4_\forte s1 s2 s4 s4_\piano s1} >>
 
 	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2 \bar ":|" 
+        g2 \bar ":|"
 }
 
 vlIIpastoralepiece = \relative c'' {
 	g4(_\soli a8) b!4( g8) c4( b8) c8( b a) |
 	b4( a8) b4( g8) e( fis g) d( g fis) |
-	
+
 	g4( a8) b4( g8) d4( e8) fis4( d8)
 	g4( fis8) g( fis e) fis4( e8) fis4( d8) |
 	b( cis d) a( d cis) d4( e8) fis4( d8) |
@@ -252,7 +258,7 @@ vlIIpastorale = \relative c'' {
 	\time 12/8
 
 	\vlIIpastoralepiece
-	
+
 	d4. r8 r fis, g4( fis8) g( fis e) |
 	fis4 d8 r r b' c4( b8) c( b a) |
 	b4 g8 r r d' d4( c8) r r b8|
@@ -281,7 +287,7 @@ vlIIpastorale = \relative c'' {
 	d4. cis b r8 r fis'8_\soli |
 	b4.~ b4 fis8 b4.~ b4 fis8_\tutti |
 	g4. r8 r g ais,4. b~ |
-	b ais b2. | 	
+	b ais b2. |
 
 	\vlIIpastoralepiece
 	d4. r8 r b a4 g8 a4 fis8|
@@ -290,7 +296,7 @@ vlIIpastorale = \relative c'' {
 	d,4. r8 r d'8 e4. r8 r e8_\pianissimo |
 	d4. r8 r d c( d b) a4 d8 |
 	b4. r8 r d,_\forte e4( d8) e4( c8)|
-	
+
 	d4( c8) d4( b8) e4( d8) e( d c)|
 	d4( c8) d4( b8) e4( d8) c4( b8)|
 	a4._\piano b a r8 r d |

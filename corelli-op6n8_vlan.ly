@@ -1,4 +1,4 @@
-vlavivace = \relative c' { 
+vlavivace = \relative c' {
 	\global
 	\time 3/4
 	\key d \minor
@@ -14,7 +14,7 @@ vlavivace = \relative c' {
 	a2. | \bar "||"
 }
 
-vlagrave = \relative c' { 
+vlagrave = \relative c' {
 	\global
 	\clef alto
 	\time 4/4
@@ -26,8 +26,8 @@ vlagrave = \relative c' {
 	a2 d, d d |
 	e d a a'~ |
 	a g4 f ees2 ees' |
-	
-	a, fis bes g | 
+
+	a, fis bes g |
 	c f, f d |
 	d g g c |
 	d g, a bes4 bes, |
@@ -36,60 +36,65 @@ vlagrave = \relative c' {
 	b\breve | \bar "|."
 }
 
-vlaallegro = \relative c' { 
+vlaallegro = \relative c' {
 	\global
 	\clef alto
 	\key d \minor
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
-	
-	R1 |
-	r8 bes d bes ees c d4 |
-	d r r2 |
-	r8 d f d g ees f4 |
-	f r r2 |
-	r2 r4 r8 d' |
-	g,4 r8 ees'8 a,4 r8 d, |
-	ees c d4 d r4 |
-	R1*2 |
-	r2 f4 r8 f|
-	bes,4 r8 f' g ees f4 |
-	d r r2 |
-	R1 |
-	f4 f f r |
-	d d d r |
-	bes' bes bes r8 d |
-	g,4 r8 ees' a,4 r8 d, |
-	ees c d4 d2 |
-	r4 g4 a2 |
-	r4 g,4 a2 | \bar ":|.|:"
 
-	R1 |
-	r4 d'4 d2 |
-	R1 |
-	r4 c4 c2 |
-	R1 |
-	a4 r8 a d,4 r8 bes' |
-	e,4 r8 a bes g a4 |
+	\repeat volta 2 {
 
-	a4 r r2 |
-	r4 g g r |
-	r2 r4 f |
-	f r f r |	
-	d r d r |
-	bes r bes r |
-	g' r8 c a4 r8 d, |
-	ees c d4 d r4 |
-	f_\piano r d r |
+		R1 |
+		r8 bes d bes ees c d4 |
+		d r r2 |
+		r8 d f d g ees f4 |
+		f r r2 |
+		r2 r4 r8 d' |
+		g,4 r8 ees'8 a,4 r8 d, |
+		ees c d4 d r4 |
+		R1*2 |
+		r2 f4 r8 f|
+		bes,4 r8 f' g ees f4 |
+		d r r2 |
+		R1 |
+		f4 f f r |
+		d d d r |
+		bes' bes bes r8 d |
+		g,4 r8 ees' a,4 r8 d, |
+		ees c d4 d2 |
+		r4 g4 a2 |
+		r4 g,4 a2
+	}
 
-	d r bes r |
-	bes r g' r8 c |
-	a4 r8 d, ees c d4 |
-	d r8 ees_\forte a,4 r8 d |
-	ees c d4 d2 | \bar ":|"
+	\repeat volta 2 {
+		R1 |
+		r4 d'4 d2 |
+		R1 |
+		r4 c4 c2 |
+		R1 |
+		a4 r8 a d,4 r8 bes' |
+		e,4 r8 a bes g a4 |
+
+		a4 r r2 |
+		r4 g g r |
+		r2 r4 f |
+		f r f r |
+		d r d r |
+		bes r bes r |
+		g' r8 c a4 r8 d, |
+		ees c d4 d r4 |
+		f_\piano r d r |
+
+		d r bes r |
+		bes r g' r8 c |
+		a4 r8 d, ees c d4 |
+		d r8 ees_\forte a,4 r8 d |
+		ees c d4 d2
+	}
 }
 
-vlaadagio = \relative c' { 
+vlaadagio = \relative c' {
 	\global
 	\clef alto
 
@@ -103,7 +108,7 @@ vlaadagio = \relative c' {
 	bes r8 c f g16 aes bes8. bes16 |
 }
 
-vlaallegroII = \relative c' { 
+vlaallegroII = \relative c' {
 	\global
 	\clef alto
 
@@ -123,14 +128,14 @@ vlaallegroII = \relative c' {
 }
 
 vlaadagioII = \relative c' {
-	\vlaadagio 
+	\vlaadagio
 	g'4 r ees g |
 	c, r ees_\piano r8 aes |
 	aes4 g8 aes bes4 bes, |
 	bes1 | \bar "|."
 }
 
-vlavivaceII = \relative c' { 
+vlavivaceII = \relative c' {
 	\global
 	\clef alto
 	\key d \minor
@@ -182,7 +187,7 @@ vlaallegroIII = \relative c' {
 	r2 g4 g |
 	c b r2 |
 	r2 a4 a |
-	d cis 
+	d cis
 	<<{\repeat unfold 2 {r2 | d4 a r2 | bes4 f r2 | e4 f8 g a4. a8 | a2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
 	\bar ":|.|:"
 
@@ -229,7 +234,7 @@ vlaallegroIII = \relative c' {
 	d2 r4 ees_\piano |
 	a,! bes8 c d4. d8 |
 	\set Score.measureLength = #(ly:make-moment 2 4)
-        d2 \bar ":|" 
+        d2 \bar ":|"
 }
 
 vlapastorale = \relative c' {
@@ -240,10 +245,10 @@ vlapastorale = \relative c' {
 
 	d4.\repeatTie r4 r8 r2. |
 	R1.*4 |
-	\repeat unfold 3 <<{g2.}{g,2.}>> c4. d | 
+	\repeat unfold 3 <<{g2.}{g,2.}>> c4. d |
 	g, r4 r8 r2. |
 	R1.*2 |
-	r4 r8 r8 r d' 
+	r4 r8 r8 r d'
 
 	d4 fis8 a4 a8 |
 	fis4. r8 r d d4. d |
@@ -282,7 +287,7 @@ vlapastorale = \relative c' {
 	d r8 r d_\piano g4. r8 r d |
 	d4. r8 r b c4. r8 r c_\pianissimo |
 	d4. r8 r g e4 d8 d4. |
-	
+
 	d4. r8 r g_\forte g4. g |
 	g r8 r g  g4. g |
 	g r8 r b, c4. r8 r c |

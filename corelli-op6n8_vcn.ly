@@ -1,4 +1,4 @@
-vcvivace = \relative c { 
+vcvivace = \relative c {
 	\global
 	\time 3/4
 	\key d \minor
@@ -26,9 +26,9 @@ clvivace = \figuremode {
 	<6 5>2 <_> <6> |
 	\set Score.measureLength = #(ly:make-moment 3 4)
 	<_+>2. | \bar "||"
-} 
+}
 
-vcgrave = \relative c' { 
+vcgrave = \relative c' {
 	\global
 	\clef bass
 	\time 4/4
@@ -50,7 +50,7 @@ vcgrave = \relative c' {
 	g,\breve | \bar "|."
 }
 
-clgrave = \figuremode { 
+clgrave = \figuremode {
 	\global
 	\clef bass
 	\time 4/4
@@ -59,7 +59,7 @@ clgrave = \figuremode {
 	<_>2 <5> <4 2> <6 5> |
   <9>2 <6> <7> <6> |
   <6 4> <5 3+> <7> <6+> |
-  <4> <3+> <9> <8> | % <3+> Modificato dall'originale <3> 
+  <4> <3+> <9> <8> | % <3+> Modificato dall'originale <3>
   <4+ 2> <6>4 <_> <5 4>2 <5- 3-> |
   <6 5>4 <_> <_>2 <9 7 _-> <8 6> |
 
@@ -72,120 +72,125 @@ clgrave = \figuremode {
 	<_!>\breve | \bar "|."
 }
 
-vcallegro = \relative c' { 
+vcallegro = \relative c' {
 	\global
 	\clef bass
 	\key d \minor
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
-	
-  r8 g bes g c a d d, |
-  g g, bes g c a d d, |
-  g \clef tenor bes' d bes ees c f f, |
-  bes \clef bass bes, d bes ees c f f, |
-  bes bes' d d, e! c' fis, d' |
 
-  g, a bes c d c d d, |	
-  ees d ees c d fis g bes, |
-  c a d d, g \clef tenor bes' d bes |
-  ees  c f f, bes c d bes |
+	\repeat volta 2 {
+	  r8 g bes g c a d d, |
+	  g g, bes g c a d d, |
+	  g \clef tenor bes' d bes ees c f f, |
+	  bes \clef bass bes, d bes ees c f f, |
+	  bes bes' d d, e! c' fis, d' |
 
-  c d ees c a f bes \clef bass d, |
-  ees f g ees f f g d |
-  ees f g d ees c f f, |
-  bes d' bes g c a d d, | 
-  g a bes g ees c f f, |
+	  g, a bes c d c d d, |
+	  ees d ees c d fis g bes, |
+	  c a d d, g \clef tenor bes' d bes |
+	  ees  c f f, bes c d bes |
 
-  bes c d e f g a fis |
-  g a bes c d d, f d |
-  ees f g a bes bes, d bes |
-  c d ees c d d' ees bes |
-  c a d d, g4  f |
+	  c d ees c a f bes \clef bass d, |
+	  ees f g ees f f g d |
+	  ees f g d ees c f f, |
+	  bes d' bes g c a d d, |
+	  g a bes g ees c f f, |
 
-  ees2 d |
-  ees2 d \bar ":|.|:"
-  \repeat unfold 2 {d'8 d, fis d g a bes g} |
-  \repeat unfold 2 {c c, e c f g a f} |
+	  bes c d e f g a fis |
+	  g a bes c d d, f d |
+	  ees f g a bes bes, d bes |
+	  c d ees c d d' ees bes |
+	  c a d d, g4  f |
 
-  bes c bes a g4. g8 |
-  a g f d g a bes g |
-  a cis d f, g e a a, |
-  d e f d g b c ees, |
-  f d g g, c d ees c |
+	  ees2 d |
+	  ees2 d
+	}
 
-  f a bes d, ees c f f, |
-  bes bes' d bes f' f, a f |
-  g a bes c d d, f d |
-  ees f g a bes bes, d bes |
-  c d ees c d d' ees bes |
-  
-  c a d d, g bes_\piano d bes |
-  f' f, a f g a bes c |
-  d d, f d ees f g a |
-  bes bes, d bes c d ees c |
-  d d' ees bes c a d d, |
+	\repeat volta 2 {
+	  \repeat unfold 2 {d'8 d, fis d g a bes g} |
+	  \repeat unfold 2 {c c, e c f g a f} |
 
-  g f_\forte ees c d d ees bes |
-  c a d d, g2 \bar ":|"
+	  bes c bes a g4. g8 |
+	  a g f d g a bes g |
+	  a cis d f, g e a a, |
+	  d e f d g b c ees, |
+	  f d g g, c d ees c |
+
+	  f a bes d, ees c f f, |
+	  bes bes' d bes f' f, a f |
+	  g a bes c d d, f d |
+	  ees f g a bes bes, d bes |
+	  c d ees c d d' ees bes |
+
+	  c a d d, g bes_\piano d bes |
+	  f' f, a f g a bes c |
+	  d d, f d ees f g a |
+	  bes bes, d bes c d ees c |
+	  d d' ees bes c a d d, |
+
+	  g f_\forte ees c d d ees bes |
+	  c a d d, g2
+	}
 }
 
-clallegro = \figuremode { 
+clallegro = \figuremode {
 	\global
 	\clef bass
 	\time 4/4
 	\set Score.measureLength = #(ly:make-moment 4 4)
-	
+
 	\repeat unfold 2 {<_>2 <6 5 _->4 <_+> } |
 	\repeat unfold 2 {<_>2 <6 5>4 <3>} |
   <_>2 <6 5>4 <6 5> |
 
-  <9>4 <6> <4> <3+> |	
-  <7>4 <6> <7 _+>2 |	
-  <6 5 _->4 <_+> <_>2 |	
-  <6 5>4 <3> <9> <6> |	
+  <9>4 <6> <4> <3+> |
+  <7>4 <6> <7 _+>2 |
+  <6 5 _->4 <_+> <_>2 |
+  <6 5>4 <3> <9> <6> |
 
-  <9 _->4 <6> <6 5>2 |	
-  <9>4 <6> <7> <5> |	
-  <_>4 <5> <6 5> <3> |	
-  <_>4 <6> <6 5 _-> <_+> |	
-  <9>4 <6> <6 5> <3> |	
+  <9 _->4 <6> <6 5>2 |
+  <9>4 <6> <7> <5> |
+  <_>4 <5> <6 5> <3> |
+  <_>4 <6> <6 5 _-> <_+> |
+  <9>4 <6> <6 5> <3> |
 
-  <9>4 <6> <4>2 |	
-  <9>4 <6> <4> <[6]> |	
-  <9>4 <6-> <4> <[6]> |	
-  <9>4 <6> <7 _+> <5> |	
-  <6 5>4 <_+> <_> <6> |	
+  <9>4 <6> <4>2 |
+  <9>4 <6> <4> <[6]> |
+  <9>4 <6-> <4> <[6]> |
+  <9>4 <6> <7 _+> <5> |
+  <6 5>4 <_+> <_> <6> |
 
-  <7>4 <6> <_+>2 |	
+  <7>4 <6> <_+>2 |
   <7>4 <6> <_+>2 \bar ":|.|:"
-  <[_+]>4 <[6]>2 <[6]>4 | 
+  <[_+]>4 <[6]>2 <[6]>4 |
   <4>1 |
-  <_>4 <[6]>2 <[6]>4 | 
+  <_>4 <[6]>2 <[6]>4 |
   <4>1 |
 
   <_>2 <[6]> |
   <_+>2 <9>4 <6> |
   <7 _+>2 <6 5>4 <_+> |
   <_>2 <7 _!>4 <_-> |
-  <6 5>4 <_!> <_->2 |	
+  <6 5>4 <_!> <_->2 |
 
   <7>2 <6 5>4 <3> |
-  <_>4 <[6]> <4> <[6]> |	
-  <9>4 <6> <4> <[6]> |	
-  <9>4 <6> <4> <[6]> |	
-  <9 _->4 <6> <7 _+> <5>8 <[6]> |	
-  
-  <6 5 _->4 <_+> <_> <[6]> |	
+  <_>4 <[6]> <4> <[6]> |
+  <9>4 <6> <4> <[6]> |
+  <9>4 <6> <4> <[6]> |
+  <9 _->4 <6> <7 _+> <5>8 <[6]> |
+
+  <6 5 _->4 <_+> <_> <[6]> |
   <4>4 <[6]> <9> <6> |
   <4>4 <[6]> <9> <6> |
   <4>4 <[6]> <9 _-> <6> |
-  <7 _+>4 <5> <6 5 _-> <_+> |	
+  <7 _+>4 <5> <6 5 _-> <_+> |
 
-  <_>4 <6> <7 _+> <5> |	
+  <_>4 <6> <7 _+> <5> |
   <6 5 _->4 <_+> <_>2 | \bar ":|"
 }
 
-vcadagio = \relative c' { 
+vcadagio = \relative c' {
 	\global
   \clef tenor
 
@@ -195,13 +200,13 @@ vcadagio = \relative c' {
   \clef bass r16 ees g ees bes' bes, d bes \clef tenor r c' ees c g' g, bes g |
   r aes c aes ees' ees, g ees \clef bass r f aes f g f g ees |
   a!8 bes ees, f bes,4 r |
-  
+
   r2 r16ees g es bes' bes, d bes |
   r c ees c g' g, bes g aes bes c aes bes8 bes |
   ees16 f g  ees aes bes c aes bes8 ees, bes' bes, |
 }
 
-cladagio = \figuremode { 
+cladagio = \figuremode {
 
   <_>2 <6> |
   <7 _->4 <6->8 <7> <7>4 <4>8 <3> |
@@ -209,19 +214,19 @@ cladagio = \figuremode {
   <_>8 <[6]> <4>4 <9>8 <6> <4>4 |
   <9>8 <6> <4>4  <9>8 <6> <7> <6-> |
   <6 5>4 <6 5>8 <3> <_>2 |
-  
+
   <_>2 <4->4 <4>4 |
   <9 [_-]>8 <6>8 <4>2 <4>8 <3> |
   <_>4 <9>8 <6> <7>4 <4>8 <3> |
 }
 
-vcallegroII = \relative c' { 
+vcallegroII = \relative c' {
 	\global
 
   ees,8 ees ees ees b b b b |
   c c c c c' c c c |
   fis, fis fis fis g g g g |
-  e! e e e f f f f | 
+  e! e e e f f f f |
   d d d d ees ees ees ees |
 
   g, g g g aes aes aes aes |
@@ -235,7 +240,7 @@ vcallegroII = \relative c' {
 	bes2 r\fermata | \bar "||"
 }
 
-clallegroII = \figuremode { 
+clallegroII = \figuremode {
 	\global
 
 	<_>2 <[6]> |
@@ -251,7 +256,7 @@ clallegroII = \figuremode {
 }
 
 vcadagioII = {
-	\vcadagio 
+	\vcadagio
 	\relative c { ees4 d c bes |
   aes r  aes_\piano r8 aes |
   bes4 ees, bes'2 |
@@ -259,7 +264,7 @@ vcadagioII = {
 }
 
 cladagioII = {
-	\cladagio 
+	\cladagio
 	\figuremode {
 		<_>4 <6 4 2> <7 5 3> <8 6 4> |
 		<5>4 <_>2 <_>8 <6> |
@@ -268,16 +273,16 @@ cladagioII = {
   } \bar "|."
 }
 
-vcvivaceII = \relative c' { 
+vcvivaceII = \relative c' {
 	\global
 	\key d \minor
 	\time 3/4
   \clef bass
 
   g4 bes g |
-  d'2. | 
+  d'2. |
   d,4 fis d |
-  g2.   
+  g2.
   g4 g,2 |
   f'2. |
   ees4 ees,2 |
@@ -306,23 +311,23 @@ vcvivaceII = \relative c' {
   g2. \bar ":|.|:"
 }
 
-clvivaceII = \figuremode { 
+clvivaceII = \figuremode {
 	\global
 	\time 3/4
-	
+
 	<_>2. |
 	<_+>2. |
-	\repeat unfold 3 { <_>2. | } 
+	\repeat unfold 3 { <_>2. | }
 	<6>2. |
 	<7>4 <6>2 |
 	<_+>2. |
-	\repeat unfold 4 { <_>2. | } 
+	\repeat unfold 4 { <_>2. | }
 	<_>4 <6>2 |
 	<_+>2 <_>4 |
 	<7 5>4 <4> <3> |
-	\repeat unfold 2 { <_>2. | } 
+	\repeat unfold 2 { <_>2. | }
 	<_->2. |
-	\repeat unfold 2 { <_>2. | } 
+	\repeat unfold 2 { <_>2. | }
 	<6 5>4 <6 5>2 |
 	<9>4 <8>4 <_>4 |
 	<6 5 _->4 <_+>2 |
@@ -330,7 +335,7 @@ clvivaceII = \figuremode {
 	<9 _->4 <8>4 <_>4 |
 	<7 _+>2 <5>4 |
 	<7 5>4 <4>4 <3>4 |
-	<_>2. |	
+	<_>2. |
 }
 
 vcallegroIII = \relative c' {
@@ -365,9 +370,9 @@ vcallegroIII = \relative c' {
   bes'4 bes, bes'4 bes, |
   ees bes ees bes |
   f' f, d'' d, |
-  ees d d' d, | 
+  ees d d' d, |
   ees d ees f |
-  
+
   g f ees f |
   g f bes ees, |
   f bes, f' f, |
@@ -378,19 +383,19 @@ vcallegroIII = \relative c' {
   bes2 r |
   g' r |
   g4 c, g' g, |
-  
+
   c2 r |
   a' r |
   a4 d, a' a, |
   d2 r |
-  R1 | 
+  R1 |
   r2 g4 fis |
   g d ees2 |
   d d'4 d, |
   e! c' fis, d' |
   g, a bes bes, |
 
-  c2. c4 | 
+  c2. c4 |
   d2 bes' |
   c d |
   ees bes, |
@@ -400,7 +405,7 @@ vcallegroIII = \relative c' {
   g4 f ees d |
   ees d c b |
   c g' b, g' |
-  
+
   c, g' b, g' |
   c,_\forteb d ees c |
   d g, d' d |
@@ -408,7 +413,7 @@ vcallegroIII = \relative c' {
   d g, d' d, |
 
 	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2 \bar ":|" 
+        g2 \bar ":|"
 }
 
 clallegroIII = \figuremode {
@@ -430,7 +435,7 @@ clallegroIII = \figuremode {
 	<_->2 <_> |
 	<_>2 <[_-]>2 |
 	<_>1*2 |
-	
+
 	<_>2 <6>4 <6> |
 	<6>4 <6> <6> <6> |
 	<6>4 <6> <6> <6> |
@@ -439,7 +444,7 @@ clallegroIII = \figuremode {
 	<6>4 <6> <6> <6> |
 	<6>4 <6> <6> <6> |
 	<6+>2 <4>4 <3> |
-	
+
 	<_>2
 	<_>2 |
 	<_+>4 <_>4 <_>2 |
@@ -459,7 +464,7 @@ clallegroIII = \figuremode {
 	<_>1 |
 	<_!>2 <_>2 |
 	<_!>4 <_-> <4> <3> |
-	
+
 	<_>1 |
 	<_+>2 <_> |
 	<_+>2 <4>4 <3> |
@@ -477,13 +482,13 @@ clallegroIII = \figuremode {
 	<_>1 |
 	<6 4+ 3->4 <7 5> <4> <3> |
 	<_>1*5 |
-	
+
 	<7 _+>2 <4>4 <3> |
 	<_>2 <_>4 <_-> |
 	<7 _+>2 <4>4 <3> |
-	
+
 	\set Score.measureLength = #(ly:make-moment 2 4)
-  <_>2 \bar ":|" 
+  <_>2 \bar ":|"
 }
 
 vcpastoralepiece = \relative c' {
@@ -495,7 +500,7 @@ vcpastoralepiece = \relative c' {
   g4_\tutti a8 b4 g8 c4 b8 c b a |
   b4 a8 b4 g8 c b c d4 d,8 |
   g4. \clef tenor g''2._\soli fis4.~ |
-  
+
   fis e2. d4.~ |
   d c2. b4 e8 |
   cis b a d4 \clef bass fis,8_\tutti g4 d8 a'4 a,8 |
@@ -504,14 +509,14 @@ vcpastoralepiece = \relative c' {
 clpastoralepiece = \figuremode {
 	<_>2. <6 4> |
 	<5>2. <_>4. <_+> |
-	
+
 	<_>2. <_+> |
 	<6 4>2. <_+> |
 	<_>4. <_+> <_>2. |
 	<_>1. |
 	<_>2. <6 5>4. <_+> |
 	<_>4. <5> <4 2> <6> |
-	
+
 	<4 2>4. <6> <4 2> <6> |
 	<4 2>4. <6> <4+ 2> <6> |
 	<6 5>4. <_+>4 <_>8 <_>4. <4>4 <3>8 |
@@ -532,7 +537,7 @@ vcpastorale = \relative c {
   d' r8 r \clef tenor g'8_\soli e4. fis |
   g2. cis, |
   d cis |
-  
+
   d4. r8 r \clef bass b8_\tutti a4 g8 c,4 d8 |
   g,4 a8 b4 g8 c4 c,8 r r cis' |
   d4 d,8 r r dis' e4 e,8 r r fis' |
@@ -542,7 +547,7 @@ vcpastorale = \relative c {
   c,4 g8 d'4 d,8 g4. c |
   r4 r8\fermata b4._\piano r2.\fermata |
   a4_\forte g8 d'4 d,8 g4. \clef tenor r8 r e'' |
-  dis4 b8 e,4 e'8 
+  dis4 b8 e,4 e'8
 
   dis4 b8 \clef bass r8 r a_\piano |
   gis4 e8 a,4 a'8 gis4 e8 r r b'_\forte |
@@ -550,10 +555,10 @@ vcpastorale = \relative c {
   gis4. ais b d, |
   e \clef tenor e'2._\tutti  d4 e8 |
   fis4 e8 fis4 fis,8 \clef bass b4._\soli a |
-  
+
   g fis e d_\tutti |
   e r8 r e fis4. b, |
-  fis' fis, b2. | 
+  fis' fis, b2. |
 
   g'2._\soli g |
 	\vcpastoralepiece
@@ -579,27 +584,27 @@ clpastorale = \figuremode {
 	\clpastoralepiece
 	<_+>4. <_> <6 4>2. |
 	<_+>4. <_> <6 4>2. |
-	
+
 	<5>4. <_> <7>4 <6>8 <7 _+>4 <6>8 |
 	<7>4 <6>8 <7>4 <6>8 <5>4 <6+>8 <_>4. |
 	<_+>4. <_> <6 5> <5> |
 	<9>4. <8 3-> <6 5>2. |
 	<5 4>2. <6 5> |
-	
+
 	<_+>4. <_>4 <6>8 <_>4. <6 5>4 <_+>8 |
 	<_>4.*3 <6>4. |
 	<_+>4. <6> <_> <6> |
 	<4>4 <6>8 <7>4 <6>8 <7>4 <6>8 <7 _+>4 <6>8 |
-	
+
 	<7>4 <6>8 <7>4 <6>8 <6+>4. <_> |
 	<_>4. <4>4 <3>8 <_>4. <_> |
 	<_>4. <6> <_>2. |
 	<6+>4. <4>4 <3>8 <_>4. <_> |
 	<_>1.*3
-	
+
 	<7>4. <5> <4> <6> |
 	<7>4. <6> <4+ 2> <6> |
-	
+
 	<6 4>4. <5 3> <_> <6 4 2> |
 	<7 5 3>4. <8 6 4> <9 7 5> <6> |
 	<9>4. <8>  <7 _+> <_> |
@@ -611,9 +616,8 @@ clpastorale = \figuremode {
 	<4>4. <_> <7>4. <_>4 <6>8 |
 	<7>4. <_>4 <6>8 <_>4. <_+> |
 	<_>1.*3 |
-	
+
 	<_+>4. <_> <4> <_>4 <3>8 |
 	<_>2. <_+> |
 	<_>1. |
 }
-
