@@ -1,4 +1,4 @@
-#(set-global-staff-size 17.6)
+% #(set-global-staff-size 17.6)
 
 \paper  {
 	auto-first-page-number = ##t
