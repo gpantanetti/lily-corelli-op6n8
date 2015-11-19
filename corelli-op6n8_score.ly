@@ -1,5 +1,7 @@
 \include "corelli-op6n8_header.ly"
+\include "corelli-op6n8_paper.ly"
 \include "corelli-op6n8_utilities.ly"
+
 \include "corelli-op6n8_vl1n.ly"
 \include "corelli-op6n8_vl2n.ly"
 \include "corelli-op6n8_vl1rn.ly"

@@ -1,5 +1,3 @@
-\include "corelli-op6n8_header.ly"
-\include "corelli-op6n8_utilities.ly"
 \include "corelli-op6n8_part.ly"
 \include "corelli-op6n8_vcn.ly"
 
@@ -16,13 +14,13 @@
 	\score { { \new Staff
 		\adagio \time 4/4 \key d \minor << \vcadagio \cladagio >> \bar "||"
 		\allegro << \vcallegroII \clallegroII >>
-		\adagio << \vcadagioII \cladagioII >>
+		\adagio << \vcadagioII \cladagioII >> \pageBreak
 	} }
 	\score { { \new Staff
 		\vivace << \vcvivaceII \clvivaceII >>
 	} }
 	\score { { \new Staff
-		\allegro << \vcallegroIII \clallegroIII >>
+		\allegro << \vcallegroIII \clallegroIII >> \pageBreak
 		\pastorale << \vcpastorale \clpastorale >>
 	} }
 }

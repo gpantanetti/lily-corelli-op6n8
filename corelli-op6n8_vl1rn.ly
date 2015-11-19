@@ -164,65 +164,70 @@ vlIrallegroIII = \relative c'' {
   \key d \minor
   \time 2/2
 
-  \partial 4*2 \repeat unfold 2 { r2 |
-  R1 |
-  r2 d4 d |
-  d fis, g2 |
-  fis } r2 | R1 |
-  r2 g'4. f8 |
-  ees8 g f ees d2 |
-  c r2 |
-  r2 ees4 d |
-  ees4 d r2 |
-  r2 f4 e |
-  f4 e r2 |
-  bes'4 a r2 |
-  g4 f r2 |
-  cis4 d2 cis4 |
-  d2 r2 |
-  bes'4_\piano a r2 |
-  g4 f r2 |
-  cis4 d2 cis4 | d2  \bar ":|.|:"
+  \repeat volta 2 {
 
-  r2 | R1 |
-  r2 \repeat unfold 3 {f4( g)} |
-  f bes, r2 |
-  R1 |
-  r2 f'4 bes, |
-  c( bes) r2 |
-  r2 c4( d) |
-  ees( d) r2 |
-  r2 f4 ees8( d) |
-  c4 d c2 |
-  bes2 r |
-  bes2_\piano r |
-  bes2 r |
-  a4_\forte bes2 a4 |
-  bes2 r |
-  b2_\piano r |
-  b4_\forte c2 b4 |
-  c2 r |
-  cis2_\piano r |
-  cis4_\forte d2 cis4|
-  d2 r |
-  R1 |
-  r2 d4 d |
-  d fis, g2 |
-  fis2 r2 |
-  R1 |
-  r2 g'4( f) |
-  ees( d) c( bes) |
-  a2 r2 |
-  R1 |
-  r4 \repeat unfold 2 { d g2~ g4 } d g d |
-  fis g2 fis4 |
-  g2 << \repeat unfold 4 {g,2 r} {\repeat unfold 4 {s2} s2_\piano s1 s2 }>>
-  g4_\forte ees' |
-  fis, g2 fis4 |
-  g2 r4 ees'4_\piano |
-  fis,4 g2 fis4 |
-  \set Score.measureLength = #(ly:make-moment 2 4)
-  g2 \bar ":|"
+      \partial 4*2 \repeat unfold 2 { r2 |
+      R1 |
+      r2 d4 d |
+      d fis, g2 |
+      fis } r2 | R1 |
+      r2 g'4. f8 |
+      ees8 g f ees d2 |
+      c r2 |
+      r2 ees4 d |
+      ees4 d r2 |
+      r2 f4 e |
+      f4 e r2 |
+      bes'4 a r2 |
+      g4 f r2 |
+      cis4 d2 cis4 |
+      d2 r2 |
+      bes'4_\piano a r2 |
+      g4 f r2 |
+      cis4 d2 cis4 | d2  \bar ":|.|:"
+  }
+
+  \repeat volta 2 {
+      r2 | R1 |
+      r2 \repeat unfold 3 {f4( g)} |
+      f bes, r2 |
+      R1 |
+      r2 f'4 bes, |
+      c( bes) r2 |
+      r2 c4( d) |
+      ees( d) r2 |
+      r2 f4 ees8( d) |
+      c4 d c2 |
+      bes2 r |
+      bes2_\piano r |
+      bes2 r |
+      a4_\forte bes2 a4 |
+      bes2 r |
+      b2_\piano r |
+      b4_\forte c2 b4 |
+      c2 r |
+      cis2_\piano r |
+      cis4_\forte d2 cis4|
+      d2 r |
+      R1 |
+      r2 d4 d |
+      d fis, g2 |
+      fis2 r2 |
+      R1 |
+      r2 g'4( f) |
+      ees( d) c( bes) |
+      a2 r2 |
+      R1 |
+      r4 \repeat unfold 2 { d g2~ g4 } d g d |
+      fis g2 fis4 |
+      g2 << \repeat unfold 4 {g,2 r} {\repeat unfold 4 {s2} s2_\piano s1 s2 }>>
+      g4_\forte ees' |
+      fis, g2 fis4 |
+      g2 r4 ees'4_\piano |
+      fis,4 g2 fis4 |
+      \set Score.measureLength = #(ly:make-moment 2 4)
+      g2
+  }
 }
 
 vlIrpastoralepiece = \relative c'' {

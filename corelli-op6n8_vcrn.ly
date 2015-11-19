@@ -258,145 +258,156 @@ vcrallegroIII = \relative c' {
 	\time 2/2
   \clef bass
 
-	\partial 4*2 \repeat unfold 2 { r2 | R1 | r2 g4 fis | g d ees2 | d }
-	r2 | R1 |
-  r2 g4 b |
-  c f, g g, |
-  c2 r2 |
-  r2 c'4 b |
-  c g r2 |
-  r2 d'4 cis |
+	\repeat volta 2 {
+		\partial 4*2 \repeat unfold 2 { r2 | R1 | r2 g4 fis | g d ees2 | d }
+		r2 | R1 |
+		r2 g4 b |
+		c f, g g, |
+		c2 r2 |
+		r2 c'4 b |
+		c g r2 |
+		r2 d'4 cis |
 
-  d4 a r2 |
-  d4 c r2 |
-  bes4 a r2 |
-  e4 d a' a, |
-  d2 r2 |
-  d'4_\piano c r2 |
-  bes4 a r2 |
-  e4 d a' a, |
+		d4 a r2 |
+		d4 c r2 |
+		bes4 a r2 |
+		e4 d a' a, |
+		d2 r2 |
+		d'4_\piano c r2 |
+		bes4 a r2 |
+		e4 d a' a, |
 
-  d2 \bar ":|.|:"
-  r2 |
-  R1*2 |
-  % |
-  bes'4 bes, r2 |
-  bes'4 bes, r2 |
-  R1 |
-  r2 d'4 d, |
-  ees d r2 |
-  r2 ees4 f |
+		d2
+	}
 
-  g f r2 |
-  r2 bes4 ees, |
-  f bes, f' f, |
-  bes2 r |
-  des_\piano r |
-  ees r |
-  f4_\forte bes, f' f, |
-  bes2 r |
-  g'_\piano r |
-  g4_\forte c, g' g, |
+	\repeat volta 2 {
+		r2 |
+		R1*2 |
+		% |
+		bes'4 bes, r2 |
+		bes'4 bes, r2 |
+		R1 |
+		r2 d'4 d, |
+		ees d r2 |
+		r2 ees4 f |
 
-  c2 r |
-  a'_\piano r |
-  a4_\forte d, a' a, |
-  d2 r |
-  R1 |
-  r2 g4 fis |
-  g d ees2 |
-  d r |
-  R1 |
-  r2 bes'4 bes, |
+		g f r2 |
+		r2 bes4 ees, |
+		f bes, f' f, |
+		bes2 r |
+		des_\piano r |
+		ees r |
+		f4_\forte bes, f' f, |
+		bes2 r |
+		g'_\piano r |
+		g4_\forte c, g' g, |
 
-  c2. c4 |
-  d2 r |
-  R1 |
-  r2 bes |
-  c d |
-  ees bes |
-  c d |
-  g4 f ees d |
-  ees d c b |
-  c g' b, g' |
+		c2 r |
+		a'_\piano r |
+		a4_\forte d, a' a, |
+		d2 r |
+		R1 |
+		r2 g4 fis |
+		g d ees2 |
+		d r |
+		R1 |
+		r2 bes'4 bes, |
 
-  c, g' b, g' |
-  c,_\forteb d ees c |
-  d g, d' d |
-  g2 r4 c,4_\piano |
-  d g, d' d, |
+		c2. c4 |
+		d2 r |
+		R1 |
+		r2 bes |
+		c d |
+		ees bes |
+		c d |
+		g4 f ees d |
+		ees d c b |
+		c g' b, g' |
 
-	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2~ \bar ":|"
+		c, g' b, g' |
+		c,_\forteb d ees c |
+		d g, d' d |
+		g2 r4 c,4_\piano |
+		d g, d' d, |
+
+		\set Score.measureLength = #(ly:make-moment 2 4)
+		    g2
+	}
 }
 
 clrallegroIII = \figuremode {
 	\global
 	\time 2/2
 
-	\partial 4*2 <_>2 |
-	<_>1*2 |
-	<_>2 <7>4 <6> |
-	<_+>2 <_> |
-	<_>1 |
-	<_>1 |
-	<_>2 <7>4 <6> |
-	<_+>2 <_> |
-	<_>1 |
-	<_>2 <_!> |
-	<_->2 <4>4 <3> |
-	<_->2 <_> |
-	<_>2 <_->2 |
-	<_>1*2 |
+	\repeat volta 2 {
+		\partial 4*2 <_>2 |
+		<_>1*2 |
+		<_>2 <7>4 <6> |
+		<_+>2 <_> |
+		<_>1 |
+		<_>1 |
+		<_>2 <7>4 <6> |
+		<_+>2 <_> |
+		<_>1 |
+		<_>2 <_!> |
+		<_->2 <4>4 <3> |
+		<_->2 <_> |
+		<_>2 <_->2 |
+		<_>1*2 |
 
-	<_>1 |
-	<6>4 <6> <_>2 |
-	<6>4 <6> <_>2 |
-	<6+>2 <4>4 <3> |
-	<_>1 |
-	<6>4 <6> <_>2 |
-	<6>4 <6> <_>2 |
-	<6+>2 <4>4 <3> |
-	<_>1*6
+		<_>1 |
+		<6>4 <6> <_>2 |
+		<6>4 <6> <_>2 |
+		<6+>2 <4>4 <3> |
+		<_>1 |
+		<6>4 <6> <_>2 |
+		<6>4 <6> <_>2 |
+		<6+>2 <4>4 <3> |
+		<_>2
+	}
 
-	<_>2 <6> |
-	<6>4 <6> <_>2 |
-	<_>2 <6>4 <6> |
-	<6->4 <6> <_>2 |
-	<_>1 |
-	<7>2 <4>4 <3> |
-	<_>1 |
-	<6>2 <_> |
-	<_->2 <_> |
-	<_>4 <_-> <4> <3> |
+	\repeat volta 2 {
+		<_>2 |
+		<_>1*5
+		<_>2 <6> |
+		<6>4 <6> <_>2 |
+		<_>2 <6>4 <6> |
+		<6->4 <6> <_>2 |
+		<_>1 |
+		<7>2 <4>4 <3> |
+		<_>1 |
+		<6>2 <_> |
+		<_->2 <_> |
+		<_>4 <_-> <4> <3> |
 
-	<_>1 |
-	<_!>2 <_>2 |
-	<_!>4 <_-> <4> <3> |
-	<_>1 |
-	<_+>2 <_> |
-	<_+>2 <4>4 <3> |
-	<_>1*3 |
-	<_>2 <7>4 <6> |
-	<_+>2 <_> |
-	<_>1 |
-	<_>2 <6> |
-	<_->2. <_>4 |
+		<_>1 |
+		<_!>2 <_>2 |
+		<_!>4 <_-> <4> <3> |
+		<_>1 |
+		<_+>2 <_> |
+		<_+>2 <4>4 <3> |
+		<_>1*3 |
+		<_>2 <7>4 <6> |
+		<_+>2 <_> |
+		<_>1 |
+		<_>2 <6> |
+		<_->2. <_>4 |
 
-	<_+>2 <_> |
-	<_>1 |
-	<_>1 |
-	<_->2 <_+> |
-	<_>1 |
-	<6 4+ 3->4 <7 5> <4> <3> |
-	<_>1*5 |
+		<_+>2 <_> |
+		<_>1 |
+		<_>1 |
+		<_->2 <_+> |
+		<_>1 |
+		<6 4+ 3->4 <7 5> <4> <3> |
+		<_>1*5 |
 
-	<7 _+>2 <4>4 <3> |
-	<_>2 <_>4 <_-> |
-	<7 _+>2 <4>4 <3> |
+		<7 _+>2 <4>4 <3> |
+		<_>2 <_>4 <_-> |
+		<7 _+>2 <4>4 <3> |
 
-	\set Score.measureLength = #(ly:make-moment 2 4)
-  <_>2 \bar ":|"
+		\set Score.measureLength = #(ly:make-moment 2 4)
+	  		<_>2
+ 	}
 }
 
 vcrpastoralepiece = \relative c {

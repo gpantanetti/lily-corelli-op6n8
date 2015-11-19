@@ -1,5 +1,3 @@
-\include "corelli-op6n8_header.ly"
-\include "corelli-op6n8_utilities.ly"
 \include "corelli-op6n8_part.ly"
 \include "corelli-op6n8_vcrn.ly"
 
@@ -11,12 +9,12 @@
 		\grave  \vcrgrave
 	} }
 	\score { { \new Staff
-		\allegro \vcrallegro
+		\allegro \vcrallegro \pageBreak
 	} }
 	\score { { \new Staff
 		\adagio \time 4/4 \key d \minor \vcradagio \bar "||"
 		\allegro \vcrallegroII
-		\adagio \vcradagioII \pageBreak
+		\adagio \vcradagioII % \pageBreak
 	} }
 	\score { { \new Staff
 		\vivace \vcrvivaceII

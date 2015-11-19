@@ -143,63 +143,66 @@ vlIIrallegroIII = \relative c'' {
 	\key d \minor
 	\time 2/2
 
-	\partial 4*2 \repeat unfold 2 { r2 |
-	R1 |
-	r2 bes4 a |
-	bes d2 c4 |
-	d2 } r2 |
-	R1 |
-	r2 b4 d |
-	g, c2 b4 |
-	c2 r2 |
-	r2 g'4 g |
-	g g, r2 |
-	r2 a'4 a |
-	a a,
-	<<{\repeat unfold 2 {r2 | f'4 e r2 | d4 c r2 | g4 f e2 | d2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
-	\bar ":|.|:"
+	\repeat volta 2 {
+		\partial 4*2 \repeat unfold 2 { r2 |
+		R1 |
+		r2 bes4 a |
+		bes d2 c4 |
+		d2 } r2 |
+		R1 |
+		r2 b4 d |
+		g, c2 b4 |
+		c2 r2 |
+		r2 g'4 g |
+		g g, r2 |
+		r2 a'4 a |
+		a a,
+		<<{\repeat unfold 2 {r2 | f'4 e r2 | d4 c r2 | g4 f e2 | d2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
+	}
 
-	r2 | R1 |
-	r2 \repeat unfold 3 {d'4( ees)} |
-	d2 r |
-	R1 |
-	r2 bes4 f |
-	g( f) r2 |
+	\repeat volta 2 {
+		r2 | R1 |
+		r2 \repeat unfold 3 {d'4( ees)} |
+		d2 r |
+		R1 |
+		r2 bes4 f |
+		g( f) r2 |
 
-	r2 g4( a) |
-	bes( a) r2|
-      	r2 d4 c8 bes |
-	a4 bes2 a4 |
-	bes2 r|
-	f_\piano r|
-	ges r|
-	c4_\forte des c2|
-	bes r|
-	d!_\piano r|
-	d4_\forte ees d2|
-	c r|
-	e!_\piano r|
-	e4_\forte f e2|
-	d r|
-  R1 |
-	r2 bes4 a|
+		r2 g4( a) |
+		bes( a) r2|
+	      	r2 d4 c8 bes |
+		a4 bes2 a4 |
+		bes2 r|
+		f_\piano r|
+		ges r|
+		c4_\forte des c2|
+		bes r|
+		d!_\piano r|
+		d4_\forte ees d2|
+		c r|
+		e!_\piano r|
+		e4_\forte f e2|
+		d r|
+	  R1 |
+		r2 bes4 a|
 
-	bes d2 c4|
-	d2 r2|
-	R1 |
-	r2 d4 d |
-	c( bes) a( g)|
-	fis2 r2 |
-	R1 |
-	r2 r4  d'4 |
-	g2. d4 |
-	g2 r4 d'4 |
-	a bes a2 |
-	g2 r | << \repeat unfold 3 {g,2 r} {\repeat unfold 2 {s1} s2_\piano r }>>
-	<< {\repeat unfold 2 {g2 r4 c4~ | c bes a2 |}} {s2 s4 s4_\forte s1 s2 s4 s4_\piano s1} >>
+		bes d2 c4|
+		d2 r2|
+		R1 |
+		r2 d4 d |
+		c( bes) a( g)|
+		fis2 r2 |
+		R1 |
+		r2 r4  d'4 |
+		g2. d4 |
+		g2 r4 d'4 |
+		a bes a2 |
+		g2 r | << \repeat unfold 3 {g,2 r} {\repeat unfold 2 {s1} s2_\piano r }>>
+		<< {\repeat unfold 2 {g2 r4 c4~ | c bes a2 |}} {s2 s4 s4_\forte s1 s2 s4 s4_\piano s1} >>
 
-	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2 \bar ":|"
+		\set Score.measureLength = #(ly:make-moment 2 4)
+	        g2
+	}
 }
 
 vlIIrpastoralepiece = \relative c'' {

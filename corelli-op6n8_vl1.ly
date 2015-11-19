@@ -1,5 +1,3 @@
-\include "corelli-op6n8_header.ly"
-\include "corelli-op6n8_utilities.ly"
 \include "corelli-op6n8_part.ly"
 \include "corelli-op6n8_vl1n.ly"
 
@@ -19,10 +17,10 @@
 		\adagio \vlIadagioII
 	} }
 	\score { { \new Staff
-		\vivace \vlIvivaceII
+		\vivace \vlIvivaceII \pageBreak
 	} }
 	\score { { \new Staff
-		\allegro \vlIallegroIII
+		\allegro \vlIallegroIII \pageBreak
 		\pastorale \vlIpastorale
 	} }
 }

@@ -1,9 +1,3 @@
-global = {
-  \override Score.PaperColumn #'keep-inside-line = ##t
-  \override Score.RehearsalMark #'self-alignment-X = #LEFT
-  \compressFullBarRests
-}
-
 mbreak = { } %\break }
 
 tupla  = { } % s16[ \repeat unfold 6 {s16} s16] }

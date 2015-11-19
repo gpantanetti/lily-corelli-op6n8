@@ -1,5 +1,4 @@
 \version "2.18.2"
-\include "corelli-op6n8_paper.ly"
 
 \header {
   title = "Concerto VIII"
@@ -15,10 +14,11 @@
 
 \paper {
     oddFooterMarkup = \markup {
-      \fill-line {
-        "(c) 2010-2015 Giuseppe Pantanetti"
-          "Corelli - Concerto Grosso Op.6 N.8 - v.2.0"
-          "CC License BY-NC-ND 4.0"
-      }
+            \fontsize #-1.2
+            \fill-line {
+                "(c) 2010-2015 Giuseppe Pantanetti"
+                "Corelli - Concerto Grosso Op.6 N.8 - v.2.0"
+                "CC License BY-NC-ND 4.0"
+        }
     }
 }

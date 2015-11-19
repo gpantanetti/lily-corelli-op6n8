@@ -175,66 +175,69 @@ vlaallegroIII = \relative c' {
 	\key d \minor
 	\time 2/2
 
-	\partial 4*2 \repeat unfold 2 { r2 |
-	R1 |
-	r2 d4 d |
-	d d g2 |
-	a2 } r2 |
-	R1 |
-	r2 g4 g |
-	g aes d, g |
-	g2 r2 |
-	r2 g4 g |
-	c b r2 |
-	r2 a4 a |
-	d cis
-	<<{\repeat unfold 2 {r2 | d4 a r2 | bes4 f r2 | e4 f8 g a4. a8 | a2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
-	\bar ":|.|:"
+	\repeat volta 2 {
+		\partial 4*2 \repeat unfold 2 { r2 |
+		R1 |
+		r2 d4 d |
+		d d g2 |
+		a2 } r2 |
+		R1 |
+		r2 g4 g |
+		g aes d, g |
+		g2 r2 |
+		r2 g4 g |
+		c b r2 |
+		r2 a4 a |
+		d cis
+		<<{\repeat unfold 2 {r2 | d4 a r2 | bes4 f r2 | e4 f8 g a4. a8 | a2}}{s2 | s1*4 | s2_\piano s2 | s1*2 | s2 }>>
+	}
 
-	r2 | R1*2 |
-	bes2 r |
-	bes r |
-	R1 |
-	r2 d,4 bes |
-	ees bes r2 |
-	r g'4 f |
-	ees f r2 |
-	r bes,4 bes |
-	f' f f2 |
-	f2 r |
-	f_\piano r |
-	ees r |
-	f4_\forte f f2 |
-	f r |
-	g_\piano r |
-	g4_\forte g g2 |
-	g r |
-	a_\piano r |
-	a4_\forte a a2 |
-	a r |
-	R1 |
-	r2 d,4 d |
-	d d g2 |
-	a r |
-	R1*1 |
-	r2 g4 g |
-	g g ees2 |
-	a,! r2 |
-	R1*1 |
-	r2 d'2 |
-	ees fis, |
-	g d |
-	ees4 g d2 |
-	d r |
-	g4 f ees d |
-	ees2 d |
-	ees_\piano d |
-	ees4_\forte fis g ees |
-	a,! bes8 c d4. d8 |
-	d2 r4 ees_\piano |
-	a,! bes8 c d4. d8 |
-	\set Score.measureLength = #(ly:make-moment 2 4)
-        d2 \bar ":|"
+	\repeat volta 2 {
+		r2 | R1*2 |
+		bes2 r |
+		bes r |
+		R1 |
+		r2 d,4 bes |
+		ees bes r2 |
+		r g'4 f |
+		ees f r2 |
+		r bes,4 bes |
+		f' f f2 |
+		f2 r |
+		f_\piano r |
+		ees r |
+		f4_\forte f f2 |
+		f r |
+		g_\piano r |
+		g4_\forte g g2 |
+		g r |
+		a_\piano r |
+		a4_\forte a a2 |
+		a r |
+		R1 |
+		r2 d,4 d |
+		d d g2 |
+		a r |
+		R1*1 |
+		r2 g4 g |
+		g g ees2 |
+		a,! r2 |
+		R1*1 |
+		r2 d'2 |
+		ees fis, |
+		g d |
+		ees4 g d2 |
+		d r |
+		g4 f ees d |
+		ees2 d |
+		ees_\piano d |
+		ees4_\forte fis g ees |
+		a,! bes8 c d4. d8 |
+		d2 r4 ees_\piano |
+		a,! bes8 c d4. d8 |
+		\set Score.measureLength = #(ly:make-moment 2 4)
+	        d2
+	}
 }
 
 vlapastorale = \relative c' {

@@ -181,57 +181,64 @@ vlIallegroIII = \relative c'' {
 	\key d \minor
 	\time 2/2
 
-	\partial 4*2 \repeat unfold 2 { g'4 fis |
-	g d bes' a |
+	\repeat volta 2 {
 
-	bes2 d,4 d |
-	d fis, g2 |
-	fis } \repeat unfold 3 { d'8 f c f } |
+		\partial 4*2 \repeat unfold 2 { g'4 fis |
+		g d bes' a |
 
-	d2 g4. f8 |
-	ees8 g f ees d2 |
-	c \repeat unfold 3 { ees8 g d g } |
-	ees4 d \repeat unfold 3 { f8 a e? a } |
-	f4 e
-	<< \repeat unfold 2 {bes' a |
-	bes a g f |
-	g f e d |
-	cis d2 cis4 |
-	d2 } {s2 s1 s1 s1 s2 s4_\piano s4 s1 s1 s1 s2 }>> \bar ":|.|:"
+		bes2 d,4 d |
+		d fis, g2 |
+		fis } \repeat unfold 3 { d'8 f c f } |
 
-	\repeat unfold 3 {a'4( bes) } |
-	a d, \repeat unfold 3 {f( g)} |
-	f bes, f' f |
-	g(  f) ees( d) |
-	c f, \repeat unfold 2 {f' bes, c( bes) }
-	\repeat unfold 2 {c( d) ees( d)} f ees8 d |
-	c4 d c2 |
-	\repeat unfold 2 { bes8( c bes c des8 c des c) } |
-	bes8( c bes c des c bes c) |
-	a4 bes2 a4 |
-	bes8( c bes c des c des c) |
-	b8( c b c d! c d c) |
-	b4 c2 b4 |
-	c8( d c d ees d ees d) |
-	cis8( d cis d e! d e d) |
-	cis4 d2 cis4|
-	d2 g4 fis |
-	g d bes' a |
-	bes2 d,4 d |
-	d fis, g2 |
-	fis2 fis'4  fis |
-	g g a a |
-	a d, g( f) |
-	ees( d) c( bes) |
-	a \repeat unfold 4 { d g2~ g4 } d g d |
-	fis g2 fis4 |
-	g2 << \repeat unfold 4 {g,2 r} {\repeat unfold 4 {s2} s2_\piano s1 s2 }>>
-	g4_\forte ees' |
-	fis, g2 fis4 |
-	g2 r4 ees'_\piano |
-        fis, g2 fis4 |
-	\set Score.measureLength = #(ly:make-moment 2 4)
-        g2 \bar ":|"
+		d2 g4. f8 |
+		ees8 g f ees d2 |
+		c \repeat unfold 3 { ees8 g d g } |
+		ees4 d \repeat unfold 3 { f8 a e? a } |
+		f4 e
+		<< \repeat unfold 2 {bes' a |
+		bes a g f |
+		g f e d |
+		cis d2 cis4 |
+		d2 } {s2 s1 s1 s1 s2 s4_\piano s4 s1 s1 s1 s2 }>>
+
+	}
+
+	\repeat volta 2 {
+
+		\repeat unfold 3 {a'4( bes) } |
+		a d, \repeat unfold 3 {f( g)} |
+		f bes, f' f |
+		g(  f) ees( d) |
+		c f, \repeat unfold 2 {f' bes, c( bes) }
+		\repeat unfold 2 {c( d) ees( d)} f ees8 d |
+		c4 d c2 |
+		\repeat unfold 2 { bes8( c bes c des8 c des c) } |
+		bes8( c bes c des c bes c) |
+		a4 bes2 a4 |
+		bes8( c bes c des c des c) |
+		b8( c b c d! c d c) |
+		b4 c2 b4 |
+		c8( d c d ees d ees d) |
+		cis8( d cis d e! d e d) |
+		cis4 d2 cis4|
+		d2 g4 fis |
+		g d bes' a |
+		bes2 d,4 d |
+		d fis, g2 |
+		fis2 fis'4  fis |
+		g g a a |
+		a d, g( f) |
+		ees( d) c( bes) |
+		a \repeat unfold 4 { d g2~ g4 } d g d |
+		fis g2 fis4 |
+		g2 << \repeat unfold 4 {g,2 r} {\repeat unfold 4 {s2} s2_\piano s1 s2 }>>
+		g4_\forte ees' |
+		fis, g2 fis4 |
+		g2 r4 ees'_\piano |
+	        fis, g2 fis4 |
+		\set Score.measureLength = #(ly:make-moment 2 4)
+	        g2
+		}
 }
 
 vlIpastoralepiece = \relative c'' {

@@ -1,5 +1,3 @@
-\include "corelli-op6n8_header.ly"
-\include "corelli-op6n8_utilities.ly"
 \include "corelli-op6n8_part.ly"
 \include "corelli-op6n8_vl2n.ly"
 
@@ -7,22 +5,22 @@
 
 \book {
 	\score { { \new Staff
-		\vivace \vlIIvivace
+		\vivace \vlIIvivace \bar "||"
 		\grave  \vlIIgrave
 	} }
 	\score { { \new Staff
-		\allegro \vlIIallegro
+		\allegro \vlIIallegro \pageBreak
 	} }
 	\score { { \new Staff
 		\adagio \time 4/4 \key d \minor \vlIIadagio \bar "||"
 		\allegro \vlIIallegroII
-		\adagio \vlIIadagioII \pageBreak
+		\adagio \vlIIadagioII
 	} }
 	\score { { \new Staff
-		\vivace \vlIIvivaceII
+		\vivace \vlIIvivaceII \pageBreak
 	} }
 	\score { { \new Staff
-		\allegro \vlIIallegroIII
+		\allegro \vlIIallegroIII \break
 		\pastorale \vlIIpastorale
 	} }
 }
